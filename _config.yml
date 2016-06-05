@@ -1,35 +1,36 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Sounds for Pixels
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: contact@soundsforpixels.com
-description: > # this means to ignore newlines until "baseurl:"
+description: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "soundsforpixels.com" # the base hostname & protocol for your site
+baseurl: 
+url: soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
-github_username:  TheHeartmann
+github_username: TheHeartmann
 twitter_feed_limit: 5
-
 blue: 8ce7f9
 gold: d3a628
 red: E03B45
 green: 239F60
 brown: 986638
-
-logo_text: <img class="img img-responsive" src="/assets/img/logo/text_horizontal_litFromLeft.png" alt="Sounds for Pixels">
-logo_chest_only: <img class="img img-responsive" src="/assets/img/logo/logo_border_noText.png" alt="Sounds for Pixels">
-logo_chest: <img class="img img-responsive" src="/assets/img/logo/logo_border.png" alt="Sounds for Pixels">
-
-
-header_image: <img class="img img-responsive" src="/assets/img/headers/header_blue_slim.png" alt="Default header">
-lorem_ipsum: Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-
-# Build settings
+logo_text: <img class="img img-responsive" src="/assets/img/logo/text_horizontal_litFromLeft.png"
+  alt="Sounds for Pixels">
+logo_chest_only: <img class="img img-responsive" src="/assets/img/logo/logo_border_noText.png"
+  alt="Sounds for Pixels">
+logo_chest: <img class="img img-responsive" src="/assets/img/logo/logo_border.png"
+  alt="Sounds for Pixels">
+header_image: <img class="img img-responsive" src="/assets/img/headers/header_blue_slim.png"
+  alt="Default header">
+lorem_ipsum: Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus
+  ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+  amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 markdown: kramdown
