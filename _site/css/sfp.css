@@ -24,6 +24,10 @@ button {
 
 #jumboIndex {
   background-color: #a0a0a0;
+  background-image: url(../assets/img/logo/logo_border_noText.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 0; }
 
 .carousel-caption {

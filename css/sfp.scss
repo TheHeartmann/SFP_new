@@ -45,8 +45,10 @@ border-top-right-radius:0 !important;
 
 #jumboIndex {
 	background-color: #a0a0a0;
-	//background-image: url(../assets/img/games/tr_crop.gif);
-	//background-size: cover;
+	background-image: url(../assets/img/logo/logo_border_noText.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	border-radius: 0;
 
 }
