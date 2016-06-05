@@ -3,15 +3,15 @@ title: Sounds for Pixels
 timezone: UTC
 collections:
   posts:
-    title: Posts
-    output: true
+	title: Posts
+	output: true
   uploads:
-    title: Uploads
-    output: true
+	title: Uploads
+	output: true
 email: contact@soundsforpixels.com
 description: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl: 
+baseurl:
 url: soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
@@ -34,3 +34,27 @@ lorem_ipsum: Donec id elit non mi porta gravida at eget metus. Fusce dapibus, te
   ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
   amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 markdown: kramdown
+
+defaults:
+  -
+	scope:
+	  path: ""
+	  type: "pages"
+	values:
+	  layout: "page"
+	  index-number:
+	  title:
+	  navbar_color:
+	  permalink:
+  -
+	scope:
+	  path: "games"
+	  type: "documents"
+	values:
+	  layout: "games"
+	  title:
+	  release_date:
+	  developer:
+	  genre:
+	  music_genre:
+	  featured_instruments:
