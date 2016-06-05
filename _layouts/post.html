@@ -13,3 +13,15 @@ layout: default
   </div>
 
 </article>
+
+
+<div class="blog-post">
+           <div class="row">
+              <div class="col-sm-4"><a href="mailto:{{ people.author.mail }}"><img class="img img-circle img-responsive col-xs-12" src="thomas_BW.png" alt="{{ author.name }}"></a></div>
+
+            <h2 class="blog-post-title">{{title}}</h2>
+            <p class="blog-post-meta">{{date}} by <a href="mailto:{{ people.author.mail }}">{{author}}</a></p>
+
+            <p>{{ content }}</p>
+            </div>
+          </div>
