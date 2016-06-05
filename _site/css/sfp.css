@@ -39,3 +39,16 @@ button {
 
 .container-fluid {
   max-width: 1200px !important; }
+
+.background-image {
+  width: inherit;
+  position: absolute;
+  z-index: 0;
+  -webkit-filter: blur(5px); }
+
+.jumboContent {
+  width: inherit;
+  position: absolute;
+  z-index: 1; }
+  .jumboContent * {
+    z-index: inherit; }
