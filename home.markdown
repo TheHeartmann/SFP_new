@@ -6,4 +6,4 @@ index_number: 0
 
 {% assign header = "Make \*\*your **game sound  great**" \*\*%}
 
-{% capture jumbotext %}This is where the text lives .{% endcapture %}
+{% assign jumbotext = "This is where the text lives ." %}
