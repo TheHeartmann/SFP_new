@@ -1,0 +1,81 @@
+---
+layout: default
+navbar_color: {{site.green}}
+index_number: 0
+title: Home
+---
+
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+	<div class="col-xs-12 col-lg-9">
+		<p class="pull-right hidden-lg-up">
+			<button type="button" class="btn btn-xs hanging-item" data-toggle="offcanvas" style="z-index: 50;"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+		</p>
+
+<!--Carousel-->
+		<div class="jumbotron hanging-item m-b-0" id="jumboIndex">
+
+			<h1 class="text-uppercase font-weight-bold">Music For <i>your</i> game.</h1><p>Sounds for Pixels bla bla bla music, you, games, lorem ipsum. You really shouldn't be reading this anymore. It's just for testing purposes.</p>
+		</div>
+			<div id="carouselIndex" class="carousel slide p-t-0 m-b-1" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
+
+  <div class="carousel-inner" role="listbox">
+	<div class="carousel-item active">
+		<a href=""><img class="carousel-img" src="/assets/img/carousel/necken-carousel.png" alt="Necken"></a>
+	</div>
+	<div class="carousel-item">
+	  <img src="/assets/img/carousel/trenchrun-carousel.png" alt="Trench Run">
+	</div>
+	<div class="carousel-item">
+	  <img src="/assets/img/carousel/riftzone-carousel.png" alt="RiftZone">
+	</div>
+
+  </div>
+	<a class="left carousel-control" href="#carouselIndex" role="button" data-slide="prev">
+	<span class="icon-prev" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carouselIndex" role="button" data-slide="next">
+	<span class="icon-next" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+  </a>
+</div>
+
+		<!--Page listing-->
+		<div class="row">
+			{% assign pages = site.pages | sort: "index_number" %}
+			<!--For some reason this didn't work when assigned higher up.-->
+			{% for page in pages %} {% if page.index_number > 0 %}
+			<div class="col-xs-6 col-md-4">
+				{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}
+				<h2>{{ page.title }}</h2>
+				<p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}</p>
+				<p><a class="btn btn-default" href="{{page.url}}" role="button">View details »</a></p>
+			</div>
+			{% endif %} {% endfor %}
+		</div>
+		<!--/row-->
+	</div>
+	<!--/.col-xs-12.col-sm-9-->
+
+	<!--Twitter feed-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+		<a class="twitter-timeline" href="https://twitter.com/soundsforpixels" data-widget-id="738308741876047873" height="1000" data-chrome=" noscrollbar noheader" data-theme="dark" data-border-color="#{{site.blue}}" data-link-color="#{{site.gold}}">Tweets by @soundsforpixels</a>
+		<!--removed: data-tweet-limit="{{site.twitter_feed_limit}}"-->
+		<script>
+			! function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0]
+					, p = /^http:/.test(d.location) ? 'http' : 'https';
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = p + "://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			}(document, "script", "twitter-wjs");
+		</script>
+	</div>
+	<!--/.sidebar-offcanvas-->
+</div>
+<!--/row-->

@@ -1,0 +1,75 @@
+---
+---
+
+@charset 'utf-8';
+//Variables
+$sfp-blue: #8ce7f9;
+$sfp-yellow: #d3a628;
+
+
+.navbar {
+  background-color: $sfp-yellow;
+
+  img {
+	height: 2em;
+	}
+}
+
+.wrapper {
+	border-top: 1px solid #606060;
+}
+
+.navbar-fixed-top {
+	padding-bottom: 0;
+}
+
+body {
+	padding-top: 47px;
+}
+
+button {
+	background-color: $sfp-blue;
+}
+
+
+
+.container {
+		overflow: hidden;
+}
+
+.hanging-item {
+
+border-top-left-radius:0 !important;
+border-top-right-radius:0 !important;
+}
+
+#jumboIndex {
+	background-color: #a0a0a0;
+	//background-image: url(../assets/img/games/tr_crop.gif);
+	//background-size: cover;
+	border-radius: 0;
+
+}
+
+.carousel-caption {
+background-color: rgba(0,0,0,.5);
+}
+
+
+
+
+
+.nav-item {
+	font-size: 1.1em;
+	margin-top: .4em;
+}
+
+.container-fluid {
+	max-width: 1200px !important;
+}
+
+.carousel-img {
+	&:hover {
+		//do something and make it work similarly to old portfolio
+	}
+}

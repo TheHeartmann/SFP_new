@@ -1,0 +1,17 @@
+<nav class="navbar navbar-fixed-top navbar-full navbar-light" {% if navbar_color %} style="background-color #{{page.navbar_color}};" {% endif %}>
+	<a class="navbar-brand" href="#" style="padding-left:0;">{{site.logo_text}}</a>
+	<button class='navbar-toggler hidden-md-up pull-xs-right' data-target='#collapsedNavbar' data-toggle='collapse' type='button'>
+		☰
+	</button>
+
+	<div class="collapse navbar-toggleable-sm pull-md-left pull-lg-right" id="collapsedNavbar">
+		<ul class="nav navbar-nav">
+			{% for page in site.pages %} {% if page.title %}
+			<li class="nav-item pull-xs-none pull-md-left">
+				<a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+			</li>
+			{% endif %} {% endfor %}
+		</ul>
+	</div>
+</nav>
+

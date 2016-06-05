@@ -1,0 +1,29 @@
+<footer>
+
+	<div class="wrapper">
+		<div class="footer-col-wrapper">
+			<div class="row" style="padding-top: .5em">
+				<div class="col-md-4 footer-col footer-col-2">
+					© {{ site.title }}
+					<br>
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+
+				</div>
+
+				<div class="col-md-4 footer-col footer-col-1">
+					{% if site.twitter_username %}
+					<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/{{site.twitter_username}}">{{site.twitter_username}}</a> {% endif %} {% if site.instagram_username %}
+					<br>
+					<i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/{{site.instagram_username}}">{{site.instagram_username}}</a> {% endif %}
+				</div>
+
+				<div class="col-md-4 footer-col footer-col-3">
+					<p>{{ site.description }}</p>
+				</div>
+			</div>
+
+		</div>
+
+
+</footer>

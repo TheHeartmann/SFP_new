@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body style="background-image: url(/assets/img/logo/logo_border_noText.png); background-size: cover;">
+{% assign pages = site.pages | sort: "index_number" %}
+	{% include navbar.html %}
+	<div class="container-fluid" style="background-color: #f0f0f0;">
+
+		<div class="page-content">
+			<div class="wrapper">
+				{{ content }}
+			</div>
+		</div>
+		{% include footer.html %}
+		{% include js.html %}
+	</div>
+
+
+
+</body>
+
+</html>
