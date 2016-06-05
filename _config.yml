@@ -2,6 +2,9 @@
 title: Sounds for Pixels
 timezone: UTC
 collections:
+  games:
+    title: Games
+    output: true
   posts:
     title: Posts
     output: true
