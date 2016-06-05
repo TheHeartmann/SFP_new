@@ -14,17 +14,23 @@ defaults:
     type: pages
   values:
     layout: page
+<<<<<<< HEAD
 <<<<<<< cd420ea84a6105b996b90cc2e03c235ebe042c90
+=======
+>>>>>>> origin/master
     index-number: 
     title: 
     navbar_color: 
     permalink: 
+<<<<<<< HEAD
 =======
     index_number:
     title:
     navbar_color:
     permalink:
 >>>>>>> Changed the dash again.
+=======
+>>>>>>> origin/master
 - scope:
     path: games
     type: documents
