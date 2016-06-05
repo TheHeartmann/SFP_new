@@ -14,7 +14,7 @@ defaults:
     type: pages
   values:
     layout: page
-    index-number:
+    index_number:
     title:
     navbar_color:
     permalink:
