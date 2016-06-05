@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <body style="background-image: url(/assets/img/logo/logo_border_noText.png); background-size: cover;">
-    {% assign pages = site.pages | sort: "index_number" %} {% include navbar.html %}
+    <!--{% assign pages = site.pages | sort: "index_number" %}--> {% include navbar.html %}
     <div class="container-fluid" style="background-color: #f0f0f0;">
 
         <div class="page-content">
@@ -48,7 +48,7 @@
 
                         <!--Page listing-->
                         <div class="row">
-                            {% assign pages = site.pages | sort: "index_number" %}
+                            <!--{% assign pages = site.pages | sort: "index_number" %}-->
                             <!--For some reason this didn't work when assigned higher up.-->
                             {% for page in pages %} {% if page.index_number > 0 %}
                             <div class="col-xs-6 col-md-4">
