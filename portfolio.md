@@ -2,7 +2,7 @@
 title: Portfolio
 date: 2016-06-02 20:57:00 +02:00
 permalink: "/portfolio/"
-position: 6
+position: 1
 index_number: 1
 ---
 
