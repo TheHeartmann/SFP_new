@@ -8,6 +8,7 @@ release_date: 2016-04-06 22:00:00.000000000 Z
 developer: Transhuman Design
 genre: Multiplayer shoot-em-up
 music_genre: Gypsy jazz
+tagline: Make friends, then blow them to bits!
 layout: post
 ---
 
