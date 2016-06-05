@@ -1,7 +1,8 @@
 ---
 title: Contact
-date: 2016-06-02 18:57:00 Z
+date: 2016-06-02 20:57:00 +02:00
 permalink: "/contact/"
+position: 2
 layout: default
 navbar_color: {}
 index_number: 5
