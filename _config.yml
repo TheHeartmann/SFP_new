@@ -28,7 +28,7 @@ defaults:
     path: games
     type: documents
   values:
-    layout: games
+    layout: post
     title: 
     release_date: 
     developer: 
