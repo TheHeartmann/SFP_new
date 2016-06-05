@@ -5,6 +5,9 @@ collections:
   games:
     title: Games
     output: true
+  people:
+    title: People
+    output: true
   posts:
     title: Posts
     output: true
