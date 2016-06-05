@@ -2,79 +2,32 @@
 layout: default
 ---
 
+<div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+      </div>
+    </div>
 
-                <div class="row row-offcanvas row-offcanvas-right">
+ <div class="container">
 
-                    <div class="col-xs-12 col-lg-9">
-                        <p class="pull-right hidden-lg-up">
-                            <button type="button" class="btn btn-xs hanging-item" data-toggle="offcanvas" style="z-index: 50;"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                        </p>
+      <div class="row">
 
-                        <!--Carousel-->
-                        <div class="jumbotron hanging-item m-b-0" id="jumboIndex">
-                            <h1 class="text-uppercase font-weight-bold">{{title}}</h1>
-                            <p>{{content}}</p>
+        <div class="col-sm-8 blog-main">
 
-                        </div>
-                        <div id="carouselIndex" class="carousel slide p-t-0 m-b-1" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
 
-                           {% assign new_games = site.games | reverse %}
-                           {% assign latest = new_games[0] %}
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <a href="{{ latest.url }}"> <img src="{{ latest.header_image }}" alt="latest.title"></a>
-                                </div>
-                                {% for game in new_games limit:4 offset:1 %}
-                                <div class="carousel-item">
-                                    <a href="{{ game.url }}"><img src="{{ game.header_image }}" alt="{{ game.title }}"></a>
-                                </div>
-                               {% endfor %}
+          <div class="blog-post">
+           <div class="row">
+              <div class="col-sm-4"><a href="mailto:{{ people.author.mail }}"><img class="img img-circle img-responsive col-xs-12" src="thomas_BW.png" alt="{{ author.name }}"></a></div>
 
-                            </div>
-                            <a class="left carousel-control" href="#carouselIndex" role="button" data-slide="prev">
-                                <span class="icon-prev" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carouselIndex" role="button" data-slide="next">
-                                <span class="icon-next" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+            <h2 class="blog-post-title">{{title}}</h2>
+            <p class="blog-post-meta">{{date}} by <a href="mailto:{{ people.author.mail }}">{{author}}</a></p>
 
-                        <!--Page listing-->
-                        <div class="row">
-                            <!--{% assign pages = site.pages | sort: "index_number" %}-->
-                            <!--For some reason this didn't work when assigned higher up.-->
-                            {% for page in pages %} {% if page.index_number > 0 %}
-                            <div class="col-xs-6 col-md-4">
-                                {% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}
-                                <h2>{{ page.title }}</h2>
-                                <p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}</p>
-                                <p><a class="btn btn-default" href="{{page.url}}" role="button">View details »</a></p>
-                            </div>
-                            {% endif %} {% endfor %}
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/.col-xs-12.col-sm-9-->
+            <p>{{ content }}</p>
+            </div>
+          </div><!-- /.blog-post -->
 
-                    <!--Twitter feed-->
-                    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-                        <a class="twitter-timeline" href="https://twitter.com/soundsforpixels" data-widget-id="738308741876047873" height="1000" data-chrome=" noscrollbar noheader" data-theme="dark" data-border-color="#{{site.blue}}" data-link-color="#{{site.gold}}">Tweets by @soundsforpixels</a>
-                        <!--removed: data-tweet-limit="{{site.twitter_feed_limit}}"-->
-                        <script>
-                            ! function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0],
-                                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + "://platform.twitter.com/widgets.js";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, "script", "twitter-wjs");
-                        </script>
-                    </div>
-                    <!--/.sidebar-offcanvas-->
-                </div>
-                <!--/row-->
+
+{% for post in posts%}
+{{post}}
+{% endfor %}
