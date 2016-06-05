@@ -7,4 +7,6 @@ Field name:
 layout: index
 ---
 
-Yeah, yeah, yeah, let's make **this** thing work!
+#Make *your* game sound *great*.
+
+Sounds for Pixels, motherfuckers!
