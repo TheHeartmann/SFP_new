@@ -8,4 +8,3 @@ layout: blog
 ---
 
 This is where the blog will go.
-
