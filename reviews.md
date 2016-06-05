@@ -2,7 +2,7 @@
 title: Reviews
 date: 2016-06-02 20:57:00 +02:00
 permalink: "/reviews/"
-position: 6
+position: 3
 layout: default
 index_number: 3
 ---
