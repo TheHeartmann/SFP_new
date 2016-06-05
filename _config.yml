@@ -14,28 +14,35 @@ defaults:
     type: pages
   values:
     layout: page
+<<<<<<< cd420ea84a6105b996b90cc2e03c235ebe042c90
+    index-number: 
+    title: 
+    navbar_color: 
+    permalink: 
+=======
     index_number:
     title:
     navbar_color:
     permalink:
+>>>>>>> Changed the dash again.
 - scope:
     path: games
     type: documents
   values:
     layout: games
-    title:
-    release_date:
-    developer:
-    genre:
-    music_genre:
-    featured_instruments:
-posts:
+    title: 
+    release_date: 
+    developer: 
+    genre: 
+    music_genre: 
+    featured_instruments: 
+posts: 
 output: true
-uploads:
+uploads: 
 email: contact@soundsforpixels.com
 description: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl:
+baseurl: 
 url: soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
