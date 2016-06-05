@@ -2,7 +2,7 @@
 title: Shop
 date: 2016-06-02 20:57:00 +02:00
 permalink: "/shop/"
-position: 2
+position: 3
 layout: default
 index_number: 6
 ---
