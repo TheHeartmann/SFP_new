@@ -7,6 +7,6 @@ Field name:
 layout: index
 ---
 
-# Make *your* game sound *great*.
+# **Make *your* game sound *great*.**
 
 Sounds for Pixels, motherfuckers!
