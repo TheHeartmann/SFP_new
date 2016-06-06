@@ -23,7 +23,7 @@ layout: default
                             <div class="carousel-inner" role="listbox">
                                {% for game in new_games limit:5 %}
                                 <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                                    <a href="{{ game.url }}"> <img src="{{ game.header_image }}" alt="game.title"></a>
+                                    <a href="{{ game.url }}"> <img src="{{ game.header_image }}" alt="{{game.title}}"></a>
                                 </div>
                                {% endfor %}
 
