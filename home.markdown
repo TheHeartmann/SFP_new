@@ -12,6 +12,6 @@ layout: index
 
 Sounds for Pixels, motherfuckers!
 
-### Last printed at: {{ site.time }}
+### Last built at: {{ site.time }}
 {{"Trying this out w/ two prepends" | prepend: site.baseurl | prepend: site.url }}
 {{"Trying this out w/ ONE prepend" | prepend: site.baseurl}}
