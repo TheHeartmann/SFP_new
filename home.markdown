@@ -10,4 +10,4 @@ layout: index
 
 # **Make *your* game sound *great*.**
 
-Sounds for Pixels, motherfuckers!
+Sounds for Pixels, motherfuckers! Last printed at: {{ site.time }}
