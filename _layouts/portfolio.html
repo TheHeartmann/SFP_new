@@ -5,13 +5,15 @@ layout: page
  <div class="row no-gutter p-a-0">
               <div class="container-fluid">
                {% for game in site.games reversed %}
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 m-a-0 p-a-0">
                     <a href="{{game.url}}" class="portfolio-box">
                         <img src="{{game.main_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded text-lowercase font-weight-bold">
-                                    {{game.responsibilities}}
+                                    {%for role in game.responsibilities %}
+                                    {{role}}
+                                    {% endfor %}
                                 </div>
                                 <div class="project-name text-uppercase">
                                     {{game.title}}
