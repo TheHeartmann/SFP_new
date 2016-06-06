@@ -124,7 +124,7 @@ background-color: rgba(0,0,0,.5);
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
+  //max-width: 650px;
   margin: 0 auto;
 }
 .portfolio-box .portfolio-box-caption {
@@ -178,3 +178,10 @@ background-color: rgba(0,0,0,.5);
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
     }
+
+.carousel-control {
+    &:hover{
+        //color: $sfp-blue;
+        //background-color: $sfp-gold-faint;
+    }
+}

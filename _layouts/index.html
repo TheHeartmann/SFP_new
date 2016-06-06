@@ -23,7 +23,24 @@ layout: default
                             <div class="carousel-inner" role="listbox">
                                {% for game in new_games limit:5 %}
                                 <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                                    <a href="{{ game.url }}"> <img src="{{ game.header_image }}" alt="{{game.title}}"></a>
+                                    <a href="{{game.url}}" class="portfolio-box">
+                        <img src="{{game.header_image}}" class="img img-responsive" alt="{{game.title}}">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded text-uppercase font-weight-bold">
+                                 {% for role in game.responsibilities %}
+                                   {% unless forloop.first %}
+                                    |
+                                    {% endunless %}
+                                    {{role}}
+                                    {% endfor %}
+                                </div>
+                                <div class="project-name">
+                                    {{game.title}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                                 </div>
                                {% endfor %}
 
