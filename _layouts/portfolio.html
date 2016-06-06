@@ -10,7 +10,7 @@ layout: page
                         <img src="{{game.main_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded text-lowercase font-weight-bold">
+                                <div class="project-category text-faded text-uppercase font-weight-bold">
                                  {% for role in game.responsibilities %}
                                    {% unless forloop.first %}
                                     |
@@ -18,7 +18,7 @@ layout: page
                                     {{role}}
                                     {% endfor %}
                                 </div>
-                                <div class="project-name text-uppercase">
+                                <div class="project-name">
                                     {{game.title}}
                                 </div>
                             </div>
