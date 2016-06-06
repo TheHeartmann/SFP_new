@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+ <div class="row no-gutter p-a-0">
+              <div class="container-fluid">
+               {% for game in site.games reversed %}
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{game.url}}" class="portfolio-box">
+                        <img src="{{game.main_image}}" class="img img-responsive" alt="{{game.title}}">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded text-lowercase font-weight-bold">
+                                    {{game.responsibilities}}
+                                </div>
+                                <div class="project-name text-uppercase">
+                                    {{game.title}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+     </div>
+</div>
