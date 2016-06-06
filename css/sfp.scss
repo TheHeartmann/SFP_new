@@ -4,11 +4,11 @@
 @charset 'utf-8';
 //Variables
 $sfp-blue: #8ce7f9;
-$sfp-yellow: #d3a628;
+$sfp-gold: #d3a628;
 
 
 .navbar {
-  background-color: $sfp-yellow;
+  background-color: $sfp-gold;
 
   img {
     height: 2em;
@@ -88,4 +88,10 @@ background-color: rgba(0,0,0,.5);
     position: absolute;
     z-index: 1;
     & *{z-index: inherit;}
+}
+
+.background {
+    background-color: rgba(255,255,255,.75);
+    border: 0.5px solid $sfp-gold;
+    border-radius: .5em;
 }
