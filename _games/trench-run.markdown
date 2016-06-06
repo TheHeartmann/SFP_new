@@ -1,7 +1,7 @@
 ---
 title: Trench Run
 date: 2016-06-05 16:58:00 +02:00
-permalink: games/trench-run
+permalink: games/trench-run/
 header_image: "/uploads/trenchrun-carousel.png"
 main_image: "/uploads/tr_crop.gif"
 release_date: 2016-04-07 00:00:00 +02:00
