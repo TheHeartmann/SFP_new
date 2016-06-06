@@ -8,6 +8,8 @@ release_date: TBA
 developer: Jocce Marklund
 genre: forest crawler
 music_genre: Ambient
+Responsibilities:
+- OST
 layout: post
 ---
 
