@@ -20,28 +20,28 @@ defaults:
     type: pages
   values:
     layout: page
-    index_number:
-    title:
-    navbar_color:
-    permalink:
+    index_number: 
+    title: 
+    navbar_color: 
+    permalink: 
 - scope:
     path: games
     type: documents
   values:
     layout: post
-    title:
-    release_date:
-    developer:
-    genre:
-    music_genre:
-    featured_instruments:
-posts:
+    title: 
+    release_date: 
+    developer: 
+    genre: 
+    music_genre: 
+    featured_instruments: 
+posts: 
 output: true
-uploads:
+uploads: 
 email: contact@soundsforpixels.com
 description: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl:
+baseurl: 
 url: http://soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
@@ -66,4 +66,4 @@ lorem_ipsum: Donec id elit non mi porta gravida at eget metus. Fusce dapibus, te
   amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 markdown: kramdown
 gems:
-    - jekyll-paginate
+- jekyll-paginate
