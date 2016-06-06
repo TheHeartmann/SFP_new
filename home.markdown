@@ -12,4 +12,4 @@ layout: index
 
 Sounds for Pixels, motherfuckers! 
 
-## Last printed at: {{ site.time }}
+### Last printed at: {{ site.time }}
