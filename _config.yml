@@ -41,11 +41,7 @@ uploads:
 email: contact@soundsforpixels.com
 description: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-<<<<<<< HEAD
 baseurl:
-=======
-baseurl: "/"
->>>>>>> origin/master
 url: soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
