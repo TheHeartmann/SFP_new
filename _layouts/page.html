@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
-<div class="header-div hanging-item p-x-0">{% if page.header_image %}{{page.header_image}}{% else %}{{site.header_image}} {% endif %}</div>
+<div class="header-div hanging-item p-x-0 m-b-2">{% if page.header_image %}{{page.header_image}}{% else %}{{site.header_image}} {% endif %}</div>
 <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  <div class="page-header">
+    <h1 class="post-title font-weight-bold text-uppercase">{{ page.title }}</h1>
+    <p class="lead m-b-0">{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}</p>
+  </div>
 
   <div class="post-content">
     {{ content }}
