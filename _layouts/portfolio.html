@@ -11,7 +11,10 @@ layout: page
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded text-lowercase font-weight-bold">
-                                    {%for role in game.responsibilities %}
+                                 {% for role in game.responsibilities %}
+                                   {% unless forloop.first %}
+                                    |
+                                    {% endunless %}
                                     {{role}}
                                     {% endfor %}
                                 </div>
