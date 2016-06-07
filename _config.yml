@@ -20,7 +20,6 @@ defaults:
     type: pages
   values:
     layout: page
-    index_number: 
     title: 
     permalink: 
 - scope:
