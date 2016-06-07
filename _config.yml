@@ -72,9 +72,9 @@ green: 239F60
 brown: 986638
 logo_text: <img class="img img-responsive" src="/assets/img/logo/text_horizontal_litFromLeft.png"
   alt="Sounds for Pixels">
-logo_chest_only: <img class="img img-responsive" src="/assets/img/logo/logo_border_noText.png"
+logo_chest_image: <img class="img img-responsive" src="/uploads/logo_border_noText_compressed.png"
   alt="Sounds for Pixels">
-logo_chest: <img class="img img-responsive" src="/assets/img/logo/logo_border.png"
+logo_image: <img class="img img-responsive" src="/uploads/logo_border_compressed.png"
   alt="Sounds for Pixels">
 header_image: <img class="img img-responsive" src="/assets/img/headers/header_blue_slim.png"
   alt="Default header">
