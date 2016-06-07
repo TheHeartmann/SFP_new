@@ -23,8 +23,8 @@ defaults:
     title: 
     permalink: 
 - scope:
-    path: games
-    type: games
+    path: 
+    type: "games"
   values:
     layout: post
     title: 
