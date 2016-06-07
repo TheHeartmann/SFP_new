@@ -39,6 +39,14 @@ defaults:
     roles: 
 - scope:
     path: ''
+    type: quotes
+  values:
+    layout: quote
+    author:
+    url: 
+    date: 
+- scope:
+    path: ''
     type: people
   values:
     layout: post
