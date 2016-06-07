@@ -32,8 +32,8 @@ defaults:
     developer: 
     genre: 
     music_genre: 
-    featured_instrument_list: 
-    roles_list: 
+    featured_instrument: 
+    roles: 
 - scope:
     path: ''
     type: people
