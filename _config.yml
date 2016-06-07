@@ -42,7 +42,7 @@ defaults:
     type: quotes
   values:
     layout: quote
-    author:
+    author: 
     url: 
     date: 
 - scope:
