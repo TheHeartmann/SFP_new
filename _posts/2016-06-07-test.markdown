@@ -1,7 +1,6 @@
 ---
 title: Test
 date: 2016-06-07 12:57:00 +02:00
-person: SFP
 categories:
 - test
 - proben
@@ -9,6 +8,7 @@ tags:
 - test
 - testing
 - tested
+person: SFP
 layout: post
 ---
 
