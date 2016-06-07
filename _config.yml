@@ -43,6 +43,7 @@ defaults:
   values:
     layout: quote
     author: 
+    publication:
     url: 
     date: 
 - scope:
