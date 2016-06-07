@@ -33,7 +33,7 @@
                                     {% endfor %}
                                     {% endif %}</div>
             <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong><br>{% for category in page.categories %}
-                                    <button class="btn btn-warning" href="{{category.url}}" role="button">{{{category}}}</button>
+                                    <button class="btn btn-warning" href="{{category.url}}" role="button">{{category}}</button>
                                     {% endfor %}{% endif %}</div>
         </div>
 
