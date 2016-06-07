@@ -1,9 +1,10 @@
 ---
 title: Welcome to Jekyll!
-date: 2016-06-02 18:21:36 Z
+date: 2016-06-02 20:21:00 +02:00
 categories:
 - jekyll
 - update
+person: SFP
 layout: post
 ---
 
