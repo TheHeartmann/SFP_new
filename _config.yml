@@ -41,15 +41,15 @@ defaults:
     layout: post
     profile_image: 
     mail: 
-    full_name:
+    full_name: 
 - scope:
-    path: 'blog'
+    path: blog
     type: posts
   values:
     layout: post
-    person:
-    game:
-    category: 'spotlight'
+    person: 
+    game: 
+    category: spotlight
 posts: 
 output: true
 uploads: 
