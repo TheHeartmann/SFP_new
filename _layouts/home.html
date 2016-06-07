@@ -23,7 +23,7 @@ layout: default
                             <div class="carousel-inner" role="listbox">
                                {% for game in new_games limit:5 %}
                                 <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                                    <a href="{{game.url}}" class="portfolio-box">
+                                    <a tabindex="-1" href="{{game.url}}" class="portfolio-box">
                         <img src="{{game.header_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -45,11 +45,11 @@ layout: default
                                {% endfor %}
 
                             </div>
-                            <a class="left carousel-control" href="#carouselIndex" role="button" data-slide="prev">
+                            <a tabindex="-1" class="left carousel-control" href="#carouselIndex" role="button" data-slide="prev">
                                 <span class="icon-prev" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="right carousel-control" href="#carouselIndex" role="button" data-slide="next">
+                            <a tabindex="-1" class="right carousel-control" href="#carouselIndex" role="button" data-slide="next">
                                 <span class="icon-next" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
