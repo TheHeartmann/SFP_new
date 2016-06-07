@@ -3,7 +3,7 @@ layout: page
 ---
 
 {% for quote in site.quotes %}
-<blockquote class="blockquote {% if forloop.index | modulo 2 != 0 %}blockquote-reverse{% endif %}">
+<blockquote class="blockquote {% cycle '', 'blockquote-reverse' %}">
   <p class="m-b-0">{{quote}}</p>
   <footer class="blockquote-footer">{{quote.author}}{% if quote.publication %}<a href="{{quote.publication}}"><cite title="Source Title">{{quote.source}}</cite></a>{% endif %}</footer>
 </blockquote>
