@@ -1,4 +1,5 @@
 {% assign author = site.people | where:"title", page.person %}
+{% if page.game %} {% assign game = site.games | where:"title", page.game %} {% endif %}
 
 <article class="post m-t-1 p-b-3" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="row">
@@ -20,21 +21,23 @@
 
         <div class="col-xs-12 col-sm-8 col-lg-9 m-r-1">
             <header class="post-header">
-                <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+                <h2 class="post-title" itemprop="name headline">{{ page.title }}{% if game %}<small class="text-muted">—Music from <a href="{{game.permalink}}">{{game}}</a></small>{% endif %}</h2>
                 <p class="post-meta">
-                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author}}</a></span></span>{% endif %}{% if page.game %}<br>from <a href="{{page.game.url}}">{{page.game.title}}</a>{% endif %}</p>
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author}}</a></span></span>{% endif %}</p>
             </header>
 
             <div class="post-content" itemprop="articleBody">
+               {% if game %} {{page.soundcloud_embed}} {% endif %}
                 {{ content }}
             </div>
-            <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong> <br> {% for tag in page.tags %}
-                                    <button class="btn btn-info" href="{{tag.url}}" role="button">{{tag}}</button>
-                                    {% endfor %}
-                                    {% endif %}</div>
-            <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong><br>{% for category in page.categories %}
-                                    <button class="btn btn-warning" href="{{category.url}}" role="button">{{category}}</button>
-                                    {% endfor %}{% endif %}</div>
+            <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong>
+                <br> {% for tag in page.tags %}
+                <button class="btn btn-info" href="{{tag.url}}" role="button">{{tag}}</button>
+                {% endfor %} {% endif %}</div>
+            <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong>
+                <br>{% for category in page.categories %}
+                <button class="btn btn-warning" href="{{category.url}}" role="button">{{category}}</button>
+                {% endfor %}{% endif %}</div>
         </div>
 
 
