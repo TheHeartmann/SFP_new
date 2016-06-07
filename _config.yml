@@ -43,7 +43,7 @@ defaults:
     mail: 
     full_name: 
 - scope:
-    path: blog
+    path:
     type: posts
   values:
     layout: post
