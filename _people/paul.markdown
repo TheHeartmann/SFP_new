@@ -3,6 +3,7 @@ title: Paul
 date: 2016-06-05 16:54:00 +02:00
 profile_image: "/uploads/paul_BW-22cb04.jpg"
 mail: paul@soundsforpixels.com
+name: Paul
 full_name: Paul Zimmermann
 ---
 
