@@ -24,7 +24,7 @@ defaults:
     title: 
     permalink: 
 - scope:
-    path: 'games'
+    path: games
     type: games
   values:
     layout: post
@@ -34,7 +34,7 @@ defaults:
     genre: 
     music_genre: 
     featured_instruments: 
-    roles:
+    roles: 
 posts: 
 output: true
 uploads: 
