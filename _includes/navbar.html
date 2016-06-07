@@ -8,7 +8,7 @@
     <div class="collapse navbar-toggleable-md hidden-lg-up pull-xl-left p-l-1" id="collapsedNavbar">
         <ul class="nav navbar-nav">
             {% for page in pages %}{% if page.index_number%}
-            <li class="nav-item pull-xs-none pull-xl-left">
+            <li class="nav-item pull-xs-none pull-sm-left pull-md-right">
                 <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
 {% endif %}
