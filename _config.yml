@@ -41,7 +41,7 @@ defaults:
     layout: post
     profile_image: 
     mail: 
-    name:
+    name: 
     full_name: 
 - scope:
     path: ''
