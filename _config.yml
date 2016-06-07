@@ -70,7 +70,7 @@ gold: d3a628
 red: E03B45
 green: 239F60
 brown: 986638
-logo_text: <img class="img img-responsive" src="/assets/img/logo/text_horizontal_litFromLeft.png"
+logo_text_image: <img class="img img-responsive" src="/uploads/text_horizontal_litFromLeft_compressed.png"
   alt="Sounds for Pixels">
 logo_chest_image: <img class="img img-responsive" src="/uploads/logo_border_noText_compressed.png"
   alt="Sounds for Pixels">
