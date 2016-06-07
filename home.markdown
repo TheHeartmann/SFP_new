@@ -5,11 +5,10 @@ permalink: "/"
 position: 0
 index_number: 0
 Field name: 
-layout: home
 ---
 
 # **Make *your* game sound *great*.**
 
-Sounds for Pixels, motherfuckers!!
+Sounds for Pixels, motherfuckers!
 
 ### Last built at: {{ site.time }}
