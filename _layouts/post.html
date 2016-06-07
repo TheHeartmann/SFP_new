@@ -22,18 +22,18 @@
             <header class="post-header">
                 <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
                 <p class="post-meta">
-                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author}}</a></span></span>{% endif %}</p>
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author}}</a></span></span>{% endif %}{% if page.game %}<br>from <a href="{{page.game.url}}">{{page.game.title}}</a>{% endif %}</p>
             </header>
 
             <div class="post-content" itemprop="articleBody">
                 {{ content }}
             </div>
             <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong> <br> {% for tag in page.tags %}
-                                    <button class="btn btn-info" href="http://soundsforpixels.com" role="button">{{tag}}</button>
+                                    <button class="btn btn-info" href="{{tag.url}}" role="button">{{tag}}</button>
                                     {% endfor %}
                                     {% endif %}</div>
             <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong><br>{% for category in page.categories %}
-                                    <button class="btn btn-warning" href="http://soundsforpixels.com" role="button">{{category}}</button>
+                                    <button class="btn btn-warning" href="{{category.url}}" role="button">{{{category}}}</button>
                                     {% endfor %}{% endif %}</div>
         </div>
 
