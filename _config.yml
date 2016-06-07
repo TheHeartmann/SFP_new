@@ -39,9 +39,9 @@ defaults:
     type: people
   values:
     layout: post
-    profile_image:
-    mail:
-    full_name:
+    profile_image: 
+    mail: 
+    full_name: 
 posts: 
 output: true
 uploads: 
