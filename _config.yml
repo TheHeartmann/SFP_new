@@ -49,6 +49,7 @@ defaults:
     layout: post
     person: 
     game: 
+    soundcloud_embed:
     category: spotlight
 posts: 
 output: true
