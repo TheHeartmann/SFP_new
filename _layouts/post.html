@@ -1,4 +1,3 @@
-
 {% assign author = site.people | where:"title", page.person %}
 
 <article class="post m-t-1 p-b-3" itemscope itemtype="http://schema.org/BlogPosting">
@@ -6,28 +5,37 @@
 
 
         <div class="col-sm-3 col-lg-2 hidden-xs-down p-a-0 m-l-1">
-                    <a href="mailto:{{author.mail}}" class="portfolio-box circle">
-                        <img src="/uploads/logo_border_compressed.png" class="img img-circle img-responsive" alt="{{author.title}}">
-                        <div class="portfolio-box-caption circle">
-                            <div class="portfolio-box-caption-content circle">
-                                <div class="project-category text-faded profile-overlay circle">
-                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </div>
-                            </div>
+            <a href="mailto:{{author.mail}}" class="portfolio-box circle">
+                <img src="/uploads/logo_border_compressed.png" class="img img-circle img-responsive" alt="{{author.title}}">
+                <div class="portfolio-box-caption circle">
+                    <div class="portfolio-box-caption-content circle">
+                        <div class="project-category text-faded profile-overlay circle">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
-                    </a>
+                    </div>
                 </div>
+            </a>
+        </div>
 
 
-<div class="col-xs-12 col-sm-8 col-lg-9 m-r-1"><header class="post-header">
-            <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-            <p class="post-meta">
-                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author}}</a></span></span>{% endif %}</p>
-        </header>
+        <div class="col-xs-12 col-sm-8 col-lg-9 m-r-1">
+            <header class="post-header">
+                <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+                <p class="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author}}</a></span></span>{% endif %}</p>
+            </header>
 
-        <div class="post-content" itemprop="articleBody">
-            {{ content }}
-        </div></div>
+            <div class="post-content" itemprop="articleBody">
+                {{ content }}
+            </div>
+            <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong> <br> {% for tag in page.tags %}
+                                    <button class="btn btn-info" href="http://soundsforpixels.com" role="button">{{tag}}</button>
+                                    {% endfor %}
+                                    {% endif %}</div>
+            <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong><br>{% for category in page.categories %}
+                                    <button class="btn btn-warning" href="http://soundsforpixels.com" role="button">{{category}}</button>
+                                    {% endfor %}{% endif %}</div>
+        </div>
 
 
     </div>
