@@ -5,10 +5,12 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
 
-    <div class="collapse navbar-toggleable-md hidden-lg-up pull-xl-left p-l-1" id="collapsedNavbar">
-        <ul class="nav navbar-nav">
-            {% for page in pages %}{% if page.index_number%}
-            <li class="nav-item pull-xs-none pull-sm-left pull-md-right">
+   {% assign currentTitle = page.title %}
+
+    <div class="collapse navbar-toggleable-md hidden-lg-up pull-md-right pull-sm-left p-l-1" id="collapsedNavbar">
+        <ul class="nav navbar-nav nav-pills">
+            {% for page in pages %}{% if page.title %}
+            <li class="nav-item pull-xs-none pull-sm-left pull-lg-right {% if page.title == currentTitle %} active{% endif %}">
                 <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
 {% endif %}
@@ -19,9 +21,9 @@
     <!--Two navbars to make them act the way we want both when collapsed and when not.-->
 
     <div class="collapse navbar-toggleable-sm hidden-md-down pull-md-left pull-md-right">
-        <ul class="nav navbar-nav">
-             {% for page in pages %} {% if page.index_number %}
-            <li class="nav-item pull-xs-none pull-md-left">
+        <ul class="nav navbar-nav nav-pills">
+             {% for page in pages %} {% if page.title %}
+            <li role="presentation" class="nav-item pull-xs-none pull-md-left {% if page.title == currentTitle %} active {% endif %}">
                 <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
             {% endif %} {% endfor %}
