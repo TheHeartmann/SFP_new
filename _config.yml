@@ -22,11 +22,10 @@ defaults:
     layout: page
     index_number: 
     title: 
-    navbar_color: 
     permalink: 
 - scope:
-    path: games
-    type: documents
+    path: 'games'
+    type: games
   values:
     layout: post
     title: 
@@ -35,6 +34,7 @@ defaults:
     genre: 
     music_genre: 
     featured_instruments: 
+    roles:
 posts: 
 output: true
 uploads: 
