@@ -32,7 +32,7 @@ defaults:
     developer: 
     genre: 
     music_genre: 
-    featured_instruments: 
+    featured_instruments: 1, 2 
     roles: 
 - scope:
     path: ''
