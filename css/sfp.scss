@@ -110,7 +110,7 @@ background-color: rgba(0,0,0,.5);
 }
 
 .page-header {
-        border-bottom: 1px solid black;
+        border-bottom: 4px solid black;
 }
 
 // From Bootstrap Creative theme
@@ -206,4 +206,27 @@ background-color: rgba(0,0,0,.5);
 .navbar-light .navbar-nav .nav-link.active:focus,
 .navbar-light .navbar-nav .nav-link.active:hover {
   color:$sfp-blue;
+}
+
+
+
+.profile-overlay {
+    font-size: 5em !important;
+    color: #fff;
+}
+
+.img-circle {
+  border-radius: 100%;
+    overflow: hidden;
+}
+
+.profile-pic {
+     border: 1px solid black;
+}
+
+.post {
+}
+
+.circle {
+    border-radius: 100%;
 }
