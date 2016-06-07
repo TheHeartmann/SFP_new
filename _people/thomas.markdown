@@ -3,6 +3,7 @@ title: Thomas
 date: 2016-06-05 16:57:00 +02:00
 profile_image: "/uploads/thomas_BW.png"
 mail: thomas@soundsforpixels.com
+name: Thomas
 full_name: Thomas Hartmann
 ---
 
