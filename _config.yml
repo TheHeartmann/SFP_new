@@ -47,7 +47,7 @@ defaults:
     type: posts
   values:
     layout: post
-    person: 
+    person: 'SFP'
     game: 
     soundcloud_embed: 
     category: spotlight
