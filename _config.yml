@@ -51,7 +51,7 @@ defaults:
     person: SFP
     game: 
     soundcloud_embed: 
-    category: spotlight
+    category:
 posts: 
 output: true
 uploads: 
