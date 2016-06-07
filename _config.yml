@@ -24,7 +24,7 @@ defaults:
     permalink: 
 - scope:
     path: ''
-    type: Games
+    type: games
   values:
     layout: post
     title: 
