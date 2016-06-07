@@ -34,6 +34,14 @@ defaults:
     music_genre: 
     featured_instruments: 
     roles: 
+- scope:
+    path: ''
+    type: people
+  values:
+    layout: post
+    profile_image:
+    mail:
+    full_name:
 posts: 
 output: true
 uploads: 
