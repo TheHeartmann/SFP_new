@@ -8,4 +8,4 @@ url: http://www.steamified.com/2016-indie-trench-run/
 quote_date: 2016-04-18 00:00:00 +02:00
 ---
 
-I love the choice of music as it really meshes with the gameplay […] and it makes for a fantastic touch to the lobby.
+"I love the choice of music as it really meshes with the gameplay […] and it makes for a fantastic touch to the lobby."
