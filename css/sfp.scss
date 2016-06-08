@@ -258,7 +258,7 @@ outline: none;
 }
 
 .about-pic {
-    border: 5px solid black;
+    border: 3px solid black;
 }
 
     .portfolio-box .about-box-caption {
@@ -278,4 +278,9 @@ outline: none;
 
 .about-box {
      background: $sfp-gold-faint !important;
+}
+
+.profile-overlay {
+    font-size: 4em !important;
+    color: #fff;
 }
