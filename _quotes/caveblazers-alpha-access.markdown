@@ -8,4 +8,4 @@ url: http://www.futurebetagamer.com/caveblazers-alpha-access/
 quote_date: 2016-03-29 00:00:00 +02:00
 ---
 
-There was nothing in this review about music. Huh.
+"charming pixel art style covered with an awesome soundtrack"
