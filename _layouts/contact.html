@@ -1,23 +1,24 @@
 ---
 layout: page
 ---
-
+<iframe src="" name="iSubmit" id="iSubmit" class="invisiframe" frameborder="0"></iframe>
 <div  id="formDiv">
+
          {{content}}
 <div class="m-x-2 p-b-1 text-center">
-    <form  id="contactForm" action="https://formspree.io/{{site.email}}" method="POST">
+    <form  id="contactForm" action="https://formspree.io/{{site.email}}" target="iSubmit" method="POST">
         <fieldset>
 <!--         <input type="hidden" name="_next" value="//site.io/thanks.html" target="submitMore"/>-->
             <legend>Send us an email:</legend>
 <!--            Your email address:-->
             <!--<br>-->
-            <input type="email" name="_replyto" size="41" placeholder="your@email.com" required>
+            <input type="email" name="_replyto" size="41" placeholder="your@email.com" value="test@test.com" required>
             <br><!--Subject:-->
             <br>
-            <input type="text" name="_subject" size="41" placeholder="Subject" required>
+            <input type="text" name="_subject" size="41" placeholder="Subject" value="still testing" required>
             <br><!--Message:-->
             <br>
-            <textarea name="message" rows="10" cols="40" placeholder="Tell us how we can help you!" required>
+            <textarea name="message" rows="10" cols="40" placeholder="Tell us how we can help you!" required>help
 </textarea>
            <br><input type="text" name="_gotcha" style="display:none" />
            <div class="text-center">
@@ -42,22 +43,18 @@ layout: page
 <script>
     $(document).ready(function () {
         $("#contactForm").submit(function (e) {
-            e.preventDefault();
+            //e.preventDefault();
             $.ajax({
                 url: "https://formspree.io/{{site.email}}",
                 method: "POST",
-                data: {
-                    _replyto: "replyto@reply.com",
-                    _subject: "subject",
-                    message: "msg",
-                    _gotcha: "gotcha"
-                },
+                data: {},
                 dataType: "json"
             });
             $("#formDiv").hide();
             $("#footerLogo").hide();
             $("#thankYou").show();
-            return false;
+            //return false;
+            //$("#iSubmit").hide();
         });
     });
 </script>

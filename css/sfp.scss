@@ -287,7 +287,9 @@ outline: none;
 }
 
 .invisiframe {
-    //display: none;
+    height: 0;
+    width: 0;
+    position: absolute;
 }
 
 #thankYou {
