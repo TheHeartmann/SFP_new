@@ -5,6 +5,7 @@ layout: page
 {% for quote in site.quotes %}
 <blockquote class="blockquote {% cycle '', 'blockquote-reverse' %}">
   <p class="m-b-0">{{quote}}</p>
-  <footer class="blockquote-footer">{{quote.author}}{% if quote.publication %}<a href="{{quote.publication}}"><cite title="Source Title">{{quote.source}}</cite></a>{% endif %}</footer>
+  {% assign gameArray = site.games | where:"title", quote.game %}{% assign game = gameArray.first %}
+  <footer class="blockquote-footer">{{quote.author}} about <a href="{{game.url}}">{{game.title}}</a> | <a href="{{quote.quote_url}}"><cite title="Source Title">{{quote.publication}}</cite></a></footer>
 </blockquote>
 {% endfor %}
