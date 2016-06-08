@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/octopress/hooks.git
+  revision: 9ec9efcbe8e2aa4d79d2a35543a29b51f3e6feb2
+  specs:
+    octopress-hooks (2.6.1)
+      jekyll (>= 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -99,6 +106,8 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
+    octopress-paginate (1.1.2)
+      octopress-hooks
     public_suffix (1.5.3)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -122,6 +131,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate
+  octopress-hooks!
+  octopress-paginate
 
 BUNDLED WITH
    1.12.5
