@@ -1,6 +1,4 @@
-$currentURL = window.location.href;
-
-$(".nav a").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
-});
+function alertAndClear(formID){
+    alert('Thank you for getting in touch. We will process your enquiry and get back to you shortly.');
+    document.getElementById(formID).reset();
+}

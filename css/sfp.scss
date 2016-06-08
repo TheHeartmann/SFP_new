@@ -285,3 +285,15 @@ outline: none;
     font-size: 4em !important;
     color: #fff;
 }
+
+#iSubmit {
+    display: none;
+}
+
+#thankYou {
+    display: none;
+    & img {
+        max-width: 500px;
+        margin: auto;
+    }
+}

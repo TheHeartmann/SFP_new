@@ -1,24 +1,48 @@
 ---
 layout: page
 ---
-
-     {{content}}
-<div class="m-x-2">
-    <form action="https://formspree.io/your@email.com" method="POST">
+<div  id="formDiv">
+         {{content}}
+     <iframe src="{{site.url}}" name="iSubmit" id="iSubmit" frameborder="0"></iframe>
+<div class="m-x-2 p-b-1 text-center">
+    <form action="http://google.com" method="POST" id="contactForm" target="iSubmit">
         <fieldset>
+           <input type="text" name="_gotcha" style="display:none" />
             <legend>Send us an email:</legend>
-            Your email address:
+<!--            Your email address:-->
+            <!--<br>-->
+            <input type="email" name="_replyto" size="41" placeholder="your@email.com">
+            <br><!--Subject:-->
             <br>
-            <input type="email" name="email" placeholder="you@example.com">
-            <br>Subject:
+            <input type="text" name="_subject" size="41" placeholder="Subject">
+            <br><!--Message:-->
             <br>
-            <input type="text" name="subject" placeholder="What's it about?">
-            <br>Message:
-            <br>
-            <textarea name="message" rows="10" cols="30" placeholder="Tell us all about your troubles!">
+            <textarea name="message" rows="10" cols="40" placeholder="Tell us how we can help you!">
 </textarea>
            <br>
-            <input type="submit" class="btn btn-info" value="Fire it off, chief!">
+           <div class="text-center">
+              <input type="submit" class="btn btn-info" value="Fire it off!"> or
+            <input type="button" class="btn btn-warning" onclick="resetForm()" value="Reset form">
+           </div>
         </fieldset>
     </form>
 </div>
+
+</div>
+
+<div id="thankYou" class="text-center m-y-3">
+    <h1 class="display-4">Thank you for getting in touch.<small class="text-muted"><br>We will process your enquiry and get back to you shortly.</small></h1>
+    <p class="lead">—the Sounds for Pixels team</p>
+    {{site.logo_image}}
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#formDiv").submit(function(){
+        $(this).hide();
+        $("#thankYou").show();
+    });
+});
+</script>
