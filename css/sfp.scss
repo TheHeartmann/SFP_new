@@ -243,18 +243,11 @@ outline: none;
 .circle {
     border-radius: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-.img-restrain {
+.img-restrain * {
+    margin-top: -8px;
     max-width: 150px;
     margin: auto;
+}
+.extra-margin {
+    margin-bottom: 2px;
 }
