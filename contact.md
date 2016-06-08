@@ -7,4 +7,4 @@ index_number: 5
 layout: contact
 ---
 
-Here's a contact form and some info.
+Have a game you need music or audio for? Complaints? Praise? Bugs with the website? Get in touch! Either send us an email at [contact@soundsforpixels.com](mailto:contact@soundsforpixels.com) or get in touch using the form below, and we'll get back to you as soon as we can!
