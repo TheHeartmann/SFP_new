@@ -1,29 +1,30 @@
 <footer>
 
-	<div class="wrapper">
-		<div class="footer-col-wrapper">
-			<div class="row" style="padding-top: .5em">
-				<div class="col-md-4 footer-col footer-col-2">
-					© {{ site.title }}
-					<br>
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            <div class="row" style="padding-top: .5em">
+                <div class="col-md-4 footer-col footer-col-2 text-xs-center text-md-left">
+                    © {{ site.title }}
+                    <br>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
 
-				</div>
+                </div>
 
-				<div class="col-md-4 footer-col footer-col-1">
-					{% if site.twitter_username %}
-					<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/{{site.twitter_username}}">{{site.twitter_username}}</a> {% endif %} {% if site.instagram_username %}
-					<br>
-					<i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/{{site.instagram_username}}">{{site.instagram_username}}</a> {% endif %}
-				</div>
+                <div class="col-md-4 footer-col footer-col-1 text-xs-center">
+                    {% if site.twitter_username %}
+                    <i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/{{site.twitter_username}}">{{site.twitter_username}}</a> {% endif %} {% if site.instagram_username %}
+                    <br>
+                    <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/{{site.instagram_username}}">{{site.instagram_username}}</a> {% endif %}
+                </div>
 
-				<div class="col-md-4 footer-col footer-col-3">
-					<p>{{ site.description }}</p>
-				</div>
-			</div>
+                <div class="col-md-1 pull-md-right text-xs-center text-md-right footer-col footer-col-3">
+                    <img class="img img-responsive img-restrain" src="/uploads/logo_border_compressed.png"
+  alt="Sounds for Pixels">
+                </div>
+            </div>
 
-		</div>
+        </div>
 
 
 </footer>
