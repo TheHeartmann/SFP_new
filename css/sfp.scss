@@ -26,7 +26,7 @@ $sfp-gold-faint: rgba(211,166,40, 0.8);
 }
 
 body {
-    padding-top: 47px;
+    padding-top: 51px;
 }
 
 button {
@@ -250,4 +250,8 @@ outline: none;
 }
 .extra-margin {
     margin-bottom: 2px;
+}
+
+#sidebar {
+    margin-top: -4px;
 }
