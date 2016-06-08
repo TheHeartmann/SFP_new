@@ -5,14 +5,14 @@ layout: page
 <h1 class="display-1 text-center">{{site.title}}</h1>
 {{content}}
 
-
-{% for person in people %}
-<div class="col-sm-2 col-lg-1 hidden-xs-down p-a-0 m-l-1">
-            <a href="mailto:{{person.mail}}" class="portfolio-box">
-                <img src="{{person.profile_image}}" class="img img-circle img-responsive" alt="{{person.title}}">
-                <div class="portfolio-box-caption">
+<div class="row">
+{% for person in site.people %}
+<div class="col-sm-2 col-lg-1 p-a-0 m-l-1">
+            <a href="mailto:{{person.mail}}" class="portfolio-box about-pic">
+                <img src="{{person.profile_image}}" class="img img-responsive" alt="{{person.title}}">
+                <div class="portfolio-box-caption about-box">
                     <div class="portfolio-box-caption-content">
-                        <div class="project-category text-faded profile-overlay">
+                        <div class="project-category text-faded about-overlay">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -20,3 +20,4 @@ layout: page
             </a>
         </div>
 {% endfor %}
+</div>

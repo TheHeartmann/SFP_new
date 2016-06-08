@@ -148,6 +148,7 @@ background-color: rgba(0,0,0,.5);
   top: 50%;
   transform: translateY(-50%);
 }
+
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -223,7 +224,7 @@ outline: none;
 }
 
 
-.profile-overlay {
+.about-overlay {
     font-size: 5em !important;
     color: #fff;
 }
@@ -254,4 +255,27 @@ outline: none;
 
 #sidebar {
     margin-top: -4px;
+}
+
+.about-pic {
+    border: 5px solid black;
+}
+
+    .portfolio-box .about-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: $sfp-gold-faint;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.about-box {
+     background: $sfp-gold-faint !important;
 }
