@@ -42,7 +42,7 @@ defaults:
     type: quotes
   values:
     layout: quote
-    game:
+    game: 
     author: 
     publication: 
     url: 
