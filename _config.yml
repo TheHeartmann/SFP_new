@@ -43,6 +43,18 @@ defaults:
     featured_instrument:
     roles:
     -
+    sc_embed_url:
+    shop_url:
+    shop_name:
+    available_at:
+    title:
+    release_date:
+    developer:
+    developer_website:
+    genre:
+    music_genre:
+    featured_instrument:
+    roles:
 - scope:
     path: ''
     type: quotes
