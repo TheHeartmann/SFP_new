@@ -8,7 +8,7 @@ release_date: 2016-04-07 00:00:00 +02:00
 developer: Transhuman Design
 genre: Multiplayer shoot-em-up
 music_genre: Gypsy jazz
-responsibilities:
+roles:
 - OST
 layout: post
 ---

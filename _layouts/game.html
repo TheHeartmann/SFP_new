@@ -6,7 +6,12 @@
         <img src="{{main_image}}" class="img img-responsive" alt="{{title}}">
     </div>
     <div class="col-sm-8 col-md-7 p-a-0">
-        <h2 class="display-4">{{ title }}<small class="text-muted"><br>Developed by <a href="developer_website">{{developer}}</a><br>Release date: {{release_date}}</small></h2>
+        <h2 class="display-4">{{ title }} — {% for role in roles %}
+                                   {% unless forloop.first %}
+                                    |
+                                    {% endunless %}
+                                    {{role}}
+                                    {% endfor %}<small class="text-muted"><br>Developed by <a href="developer_website">{{developer}}</a><br>Release date: {{release_date}}</small></h2>
     </div>
 
     <div class="col-xs-12">{{sc_embed_url}}</div>
