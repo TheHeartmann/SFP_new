@@ -10,7 +10,7 @@ genre: forest crawler
 music_genre: Ambient
 roles:
 - OST
-layout: post
+layout: game
 ---
 
 # Necken
