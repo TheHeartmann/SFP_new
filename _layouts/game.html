@@ -1,43 +1,34 @@
+<div class="header-div p-x-0 p-b-0">
+    <img class="img img-responsive" src="{{page.header_image}}" alt="{{page.title}}"></div>
 
-<div class="header-div p-x-0 p-b-0"><img class="img img-responsive" src="{{page.header_image}}"
-  alt="{{page.title}}"></div>
-<article class="post">
-
-        <div class="row">
-        <div class="col-sm-2 col-lg-1 hidden-xs-down p-a-0 m-l-1">
-            <a href="mailto:{{author.mail}}" class="portfolio-box circle">
-                <img src="{{author.profile_image}}" class="img img-circle img-responsive" alt="{{author.title}}">
-                <div class="portfolio-box-caption circle">
-                    <div class="portfolio-box-caption-content circle">
-                        <div class="project-category text-faded profile-overlay circle">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="col-xs-12 col-sm-9 col-lg-10 m-r-1">
-            <header class="post-header">
-                <h2 class="post-title display-4" itemprop="name headline">{{ page.title }}{% if game %}<small class="text-muted"><br>—Music from <a href="{{game.permalink}}">{{game.title}}</a></small>{% endif %}</h2>
-                <p class="post-meta">
-                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author.title}}</a></span></span>{% endif %}</p>
-            </header>
-
-            <div class="post-content" itemprop="articleBody">
-               {% if game %} {{page.soundcloud_embed}} {% endif %}
-                {{ content }}
-            </div>
-            <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong>
-                <br> {% for tag in page.tags %}
-                <button class="btn btn-info" href="{{tag.url}}" role="button">{{tag}}</button>
-                {% endfor %} {% endif %}</div>
-            <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong>
-                <br>{% for category in page.categories %}
-                <button class="btn btn-warning" href="{{category.url}}" role="button">{{category}}</button>
-                {% endfor %}{% endif %}</div>
-        </div>
-
-
+<div class="row">
+    <div class="col-sm-3 col-md-4 p-a-0 m-l-1">
+            <img src="{{page.main_image}}" class="img img-responsive" alt="{{page.title}}">
     </div>
+    <div class="col-sm-8 col-md-7 p-a-0 m-r-1">
+         <h2 class="display-4">{{ page.title }}<small class="text-muted"><br>—Music from <a href="">{{game.title}}</a></small>{% endif %}</h2>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-9 col-lg-10 m-r-1">
+        <header class="post-header">
+            <h2 class="post-title display-4" itemprop="name headline">{{ page.title }}{% if game %}<small class="text-muted"><br>—Music from <a href="{{game.permalink}}">{{game.title}}</a></small>{% endif %}</h2>
+            <p class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author.title}}</a></span></span>{% endif %}</p>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+            {% if game %} {{page.soundcloud_embed}} {% endif %} {{ content }}
+        </div>
+        <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong>
+            <br> {% for tag in page.tags %}
+            <button class="btn btn-info" href="{{tag.url}}" role="button">{{tag}}</button>
+            {% endfor %} {% endif %}</div>
+        <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong>
+            <br>{% for category in page.categories %}
+            <button class="btn btn-warning" href="{{category.url}}" role="button">{{category}}</button>
+            {% endfor %}{% endif %}</div>
+    </div>
+
+
+</div>
