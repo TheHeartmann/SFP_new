@@ -42,6 +42,7 @@ defaults:
     music_genre:
     featured_instrument:
     roles:
+    -
 - scope:
     path: ''
     type: quotes
