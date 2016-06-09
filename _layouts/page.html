@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<div class="header-div hanging-item p-x-0 p-b-0">{% if page.header_image %}{{page.header_image}}{% else %}{{site.header_image}} {% endif %}</div>
+<div class="header-div hanging-item p-x-0 p-b-0">{% if page.header_image %}{{page.header_image}}{% else %}{{site.header_image}} {% endif %}
+
+<button type="button" data-toggle="modal" data-target="#SCModal" class="btn-warning btn hanging-item header-button"><i class="fa fa-soundcloud" aria-hidden="true"></i></button>
+
+<!--<button type="button" data-toggle="modal" data-target="#SCModal" class="btn-warning btn btn-block hanging-item header-button"><i class="fa fa-soundcloud" aria-hidden="true"></i></button>-->
+
+</div>
 <article class="post">
 
   <div class="page-header m-t-1">
     <h1 class="post-title display-4 text-uppercase">{{ page.title }}</h1>
-    <p class="lead m-b-0">{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}<br>If you just want to hear some music, click here: <button type="button" data-toggle="modal" data-target="#SCModal" class="btn-warning btn"><i class="fa fa-soundcloud" aria-hidden="true"></i></button></p>
+    <p class="lead m-b-0">{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}</p>
   </div>
 
   <div class="post-content">

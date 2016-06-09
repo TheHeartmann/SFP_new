@@ -362,3 +362,15 @@ background: none;
 
 
 
+
+.header-button {
+    border-bottom-right-radius: 0;
+    position: fixed;
+    padding-right: 1em;
+    z-index: 20;
+    top:50px;
+    right: 0;
+    background-color: #FF5500 !important;
+    //background-color: $sfp_gold !important;
+    border: none !important;
+}
