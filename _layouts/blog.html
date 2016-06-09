@@ -5,26 +5,3 @@ layout: page
 {% for post in site.posts %}
 {{post}}
 {% endfor %}
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <button href="{{ paginator.previous_page_path }}" class="previous btn btn-success disabled">Previous</button>
-  {% else %}
-    <button class="previous btn btn-success disabled">Previous</button>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next btn btn-success disabled">Next</a>
-  {% else %}
-    <span class="next btn btn-success disabled">Next</span>
-  {% endif %}
-</div>
-
-
-<nav>
-  <ul class="pager">
-   <li class="pager-next"><a href="{{ paginator.previous_page_path }}">Newer</a></li>
-    <li class="pager-prev"><a href="{{ paginator.next_page_path }}">Older</a></li>
-  </ul>
-</nav>
