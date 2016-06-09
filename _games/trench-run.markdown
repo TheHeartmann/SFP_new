@@ -1,10 +1,11 @@
 ---
 title: Trench Run
-title_no_spaces: TrenchRun
 date: 2016-06-05 16:58:00 +02:00
 permalink: games/trench-run/
+title_no_spaces: TrenchRun
 sc_embed_url: <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249867696&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
-yt_embed_url: <iframe width="560" height="315" src="https://www.youtube.com/embed/czUTZbRZ6ec" frameborder="0" allowfullscreen></iframe>
+yt_embed_url: <iframe width="560" height="315" src="https://www.youtube.com/embed/czUTZbRZ6ec"
+  frameborder="0" allowfullscreen></iframe>
 shop_url: http://soundsforpixels.bandcamp.com
 shop_name: Bandcamp
 available_at: Wanna check out the full soundtrack? Head on over to
