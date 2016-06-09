@@ -8,4 +8,3 @@ shop_url: https://soundsforpixels.bandcamp.com/
 layout: shop
 ---
 
-Shop stuff? Redirect to bandcamp, probably.
