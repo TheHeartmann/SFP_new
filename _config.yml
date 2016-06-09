@@ -23,61 +23,61 @@ defaults:
     type: pages
   values:
     layout: page
-    title: 
-    permalink: 
+    title:
+    permalink:
 - scope:
     path: ''
     type: games
   values:
     layout: post
-    title: 
-    release_date: 
-    developer: 
-    genre: 
-    music_genre: 
-    featured_instrument: 
-    roles: 
+    title:
+    release_date:
+    developer:
+    genre:
+    music_genre:
+    featured_instrument:
+    roles:
 - scope:
     path: ''
     type: quotes
   values:
     layout: quote
-    game: 
-    author: 
-    publication: 
-    url: 
-    quote_date: 
+    game:
+    author:
+    publication:
+    url:
+    quote_date:
 - scope:
     path: ''
     type: people
   values:
     layout: post
-    profile_image: 
-    mail: 
-    name: 
-    full_name: 
+    profile_image:
+    mail:
+    name:
+    full_name:
 - scope:
     path: ''
     type: posts
   values:
     layout: post
     person: SFP
-    game: 
-    soundcloud_embed: 
-posts: 
+    game:
+    soundcloud_embed:
+posts:
 output: true
-uploads: 
+uploads:
 email: contact@soundsforpixels.com
 description: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl: 
+baseurl:
 url: http://soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
 github_username: TheHeartmann
 twitter_feed_limit: 5
 paginate: 5
-paginate_path: "/blog/"
+paginate_path: "/_site/"
 blue: 8ce7f9
 gold: d3a628
 red: E03B45

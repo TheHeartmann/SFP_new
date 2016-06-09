@@ -43,18 +43,11 @@ layout: page
 <script>
     $(document).ready(function () {
         $("#contactForm").submit(function (e) {
-            //e.preventDefault();
-            $.ajax({
-                url: "https://formspree.io/whatever@somehwere.com",
-                method: "POST",
-                data: {},
-                dataType: "json"
-            });
+
             $("#formDiv").hide();
             $("#footerLogo").hide();
             $("#thankYou").show();
-            //return false;
-            //$("#iSubmit").hide();
+
         });
     });
 </script>
