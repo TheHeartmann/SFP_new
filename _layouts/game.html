@@ -12,7 +12,6 @@
             </div>
 
             <div class="row m-x-1 text-xs-center">
-                <div class="col-xs-12" style="margin-top:.4em;">{{page.sc_embed_url}}</div>
                 <div class="col-xs-12 p-a-0">
                     <h2 class="display-4 m-b-0 p-b-0">{{ page.title }}<small class="text-muted text-xs-center text-md-left p-y-0 m-y-0"><br>{% for role in page.roles %}
                                    {% unless forloop.first %}
@@ -26,12 +25,13 @@
                         <br>Release date:
                         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.release_date | date: "%b %-d, %Y" }}</time>
                     </p>
+                    <div class="col-xs-12 p-b-1">{{page.sc_embed_url}}</div>
                 </div>
             </div>
-            <div class="row m-x-1">
+            <div class="row m-x-1 p-b-1">
 
                 <div class="col-xs-12">{{content}}</div>
-                {% if page.shop_url %}
+                {% if page.quote %}
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="m-b-0">{{page.quote.text}}</p>
                     <footer class="blockquote-footer">{{page.quote.author}} | <a href="{{page.quote.url}}"><cite title="Source Title">{{page.quote.publication}}</cite></a></footer>
@@ -42,14 +42,6 @@
                 </div>
                 {% endif %}
             </div>
-
-            {% if page.yt_embed_url %}
-            <div class="embed-responsive embed-responsive-16by9">
-                {{yt_embed_url}}
-            </div>
-            {% endif %}
-
-
         </div>
     </div>
 </div>
