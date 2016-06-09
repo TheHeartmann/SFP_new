@@ -5,7 +5,7 @@ permalink: "/shop/"
 position: 6
 index_number: 6
 shop_url: https://soundsforpixels.bandcamp.com/
-layout: page
+layout: shop
 ---
 
 Shop stuff? Redirect to bandcamp, probably.
