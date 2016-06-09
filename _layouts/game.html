@@ -1,25 +1,25 @@
 <div class="p-x-0 p-b-0">
-    <img class="img img-responsive" src="{{header_image}}" alt="{{title}}"></div>
+    <img class="img img-responsive" src="{{page.header_image}}" alt="{{page.title}}"></div>
 
 <div class="row m-x-1">
     <div class="col-sm-3 col-md-4 p-a-0">
-        <img src="{{main_image}}" class="img img-responsive" alt="{{title}}">
+        <img src="{{page.main_image}}" class="img img-responsive" alt="{{page.title}}">
     </div>
     <div class="col-sm-8 col-md-7 p-a-0">
-        <h2 class="display-4">{{ title }} — {% for role in roles %}
+        <h2 class="display-4">{{ page.title }} — {% for role in page.roles %}
                                    {% unless forloop.first %}
                                     |
                                     {% endunless %}
                                     {{role}}
-                                    {% endfor %}<small class="text-muted"><br>Developed by <a href="developer_website">{{developer}}</a><br>Release date: {{release_date}}</small></h2>
+                                    {% endfor %}<small class="text-muted"><br>Developed by <a href="{{page.developer_website}}">{{page.developer}}</a><br>Release date: {{page.release_date}}</small></h2>
     </div>
 
-    <div class="col-xs-12">{{sc_embed_url}}</div>
+    <div class="col-xs-12">{{page.sc_embed_url}}</div>
 
     <div class="col-xs-12">{{content}}</div>
 
-    {% if shop_url %}
+    {% if page.shop_url %}
     <div class="col-xs-12">
-        {{available_at}} <a href="{{shop_url}}">{{shop_name}}</a>
+        {{page.available_at}} <a href="{{page.shop_url}}">{{page.shop_name}}</a>
     </div>
     {% endif %}
