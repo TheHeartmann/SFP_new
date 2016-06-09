@@ -6,7 +6,7 @@ layout: page
               <div class="container-fluid">
                {% for game in site.games reversed %}
                 <div class="col-lg-4 col-sm-6 m-a-0 p-a-0">
-                    <a href="{{game.url}}" class="portfolio-box">
+                    <button type="button" data-toggle="modal" data-target="#{{game.title_no_spaces}}Modal" class="btn-no-style portfolio-box">
                         <img src="{{game.main_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -23,7 +23,7 @@ layout: page
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </button>
                 </div>
                 {% endfor %}
      </div>

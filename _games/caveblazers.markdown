@@ -1,5 +1,6 @@
 ---
 title: Caveblazers
+title_no_spaces: Caveblazers
 date: 2016-06-06 18:47:00 +02:00
 permalink: games/caveblazers/
 header_image: "/uploads/riftzone-carousel.png"

@@ -26,7 +26,7 @@ $sfp-gold-faint: rgba(211,166,40, 0.8);
 }
 
 body {
-    padding-top: 51px;
+    padding-top: 50px;
 }
 
 button {
@@ -321,11 +321,40 @@ outline: none;
 }
 
 .game-header {
- border: 1px solid $sfp-gold-faint;
-    border-bottom-left-radius: 1.5em;
+ border-bottom: 1px solid $sfp-gold-faint;
+    border-bottom-left-radius: .5em;
     overflow: hidden;
 }
 
 
 
 
+
+
+
+.modal-header {
+    background-color: $sfp-gold;
+    border-bottom: none;
+}
+
+.header-img-restrict {
+    width: 30%;
+    overflow: hidden;
+    display: inline-block;
+    padding-bottom: -10px;
+    margin-bottom: -10px;
+}
+
+.navbar-brand {
+    margin-bottom: -20px;
+}
+
+body {
+
+}
+
+.btn-no-style {
+    padding: 0;
+border: none;
+background: none;
+}

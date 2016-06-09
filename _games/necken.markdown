@@ -1,5 +1,6 @@
 ---
 title: Necken
+title_no_spaces: Necken
 date: 2016-06-05 17:05:00 +02:00
 permalink: games/necken/
 header_image: "/uploads/necken-carousel.png"
