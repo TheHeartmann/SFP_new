@@ -77,7 +77,7 @@ instagram_username: soundsforpixels
 github_username: TheHeartmann
 twitter_feed_limit: 5
 paginate: 5
-paginate_path: "/_site/"
+paginate_path: "/_site/page:num"
 blue: 8ce7f9
 gold: d3a628
 red: E03B45
@@ -97,4 +97,4 @@ lorem_ipsum: Donec id elit non mi porta gravida at eget metus. Fusce dapibus, te
 markdown: kramdown
 gems:
 - jekyll-paginate
-- octopress-paginate
+- jekyll-archives
