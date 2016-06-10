@@ -261,6 +261,13 @@ outline: none;
 
 #sidebar {
     margin-top: -4px;
+    //border-right: 70px solid $sfp-blue-faint;
+}
+
+@media (max-width: 978px) {
+    #sidebar{
+        padding-right: 30px;
+    }
 }
 
 .about-pic {
