@@ -12,6 +12,7 @@ $sfp-gold-faint: rgba(211,166,40, 0.8);
 .navbar {
   background-color: $sfp-gold;
     border-bottom: none;
+    max-height: 50px;
 
   img {
     height: 2em;
@@ -199,7 +200,7 @@ outline: none;
 .nav-tabs .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover {
   color: $sfp-blue-faint;
-  background-color: $sfp-blue-faint;
+  background-color: $sfp-blue-faint !important;
   border-color: #000 #000 transparent #000;
 }
 
@@ -387,4 +388,28 @@ background: none;
     height: 50px;
     border-radius: 0 !important;
     font-size: 1.2em;
+}
+
+//Nav spacing
+#collapsedNavbar ul {
+display: table;
+    background-color: $sfp-gold;
+list-style: none;
+    border-bottom-left-radius: .5em;
+   // border-bottom-right-radius: .5em;
+}
+#collapsedNavbar ul li {
+display: table-cell;
+text-align: left;
+    width: 100%;
+}
+#collapsedNavbar ul li a {
+display: block;
+}
+
+#collapsedNavbar {
+          //width: 100%;
+    width: 9.4em;
+    //border: 2px solid red;
+   // background-color: rgba(255,255,255,0)
 }

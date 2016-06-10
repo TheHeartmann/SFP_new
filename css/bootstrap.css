@@ -6225,6 +6225,8 @@ a.bg-danger:focus, a.bg-danger:hover {
   }
   #collapsedNavbar {
     clear: both;
+      width: 100%;
+      border: 1px solid black;
   }
 }
 
