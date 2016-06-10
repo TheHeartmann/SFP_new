@@ -1,7 +1,48 @@
 ---
 layout: page
 ---
-
-{% for post in site.posts %}
+<div class=row>
+    <div class="col-xs-12 col-lg-10">
+        {% for post in site.posts %}
 {{post}}
 {% endfor %}
+    </div>
+
+
+
+<div class="hidden-md-down col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas m-r-0 p-r-1" id="sidebar">
+
+   <p class="lead">Categories:</p>
+<div class="list-group">
+
+    {% for category in site.categories %}
+    <button type="button" class="list-group-item">{{ category[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ category[1].size }}</span></button>
+    {% endfor %}
+</div>
+
+<div class="list-group">
+<p class="lead">Tags:</p>
+    {% for tag in site.tags %}
+      <button type="button" class="list-group-item">{{ tag[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ tag[1].size }}</span></button>
+    {% endfor %}
+</div>
+<!--
+
+{% for tag in site.categories %}
+  <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+  <ul class="post-list">
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list %}
+      {% if post.title != null %}
+      {% if group == null or group == post.group %}
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"> ({{ post.date | date: "%b %-d, %Y" }})</time></a></li>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+{% endfor %}
+
+
+-->

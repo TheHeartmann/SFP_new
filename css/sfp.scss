@@ -261,13 +261,10 @@ outline: none;
 
 #sidebar {
     margin-top: -4px;
-    //border-right: 70px solid $sfp-blue-faint;
 }
 
 @media (max-width: 978px) {
-    #sidebar{
-        padding-right: 30px;
-    }
+ margin-right: 300px;
 }
 
 .about-pic {
@@ -467,4 +464,12 @@ body {
 
 .sidebar-offcanvas {
     height: 100%;
+}
+
+.tag-list {
+    list-style: none;
+}
+
+.label-default {
+    background-color: $sfp-gold-faint;
 }

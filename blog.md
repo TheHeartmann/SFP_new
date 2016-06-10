@@ -5,6 +5,8 @@ permalink: "/blog/"
 position: 2
 index_number: 2
 layout: blog
+has_sidebar: true
+sidebar_icon: <i class="fa fa-tags" aria-hidden="true"></i>
 ---
 
 This is where the blog will go.
