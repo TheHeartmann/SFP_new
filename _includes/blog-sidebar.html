@@ -4,13 +4,13 @@
 <div class="list-group">
 
     {% for category in site.categories %}
-    <button type="button" class="list-group-item">{{ category[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ category[1].size }}</span></button>
+    <button type="button" class="list-group-item" onClick="show({{category[0]}})">{{ category[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ category[1].size }}</span></button>
     {% endfor %}
 </div>
 
 <div class="list-group">
 <p class="lead"><a href="">Tags:</a></p>
     {% for tag in site.tags %}
-      <button type="button" class="list-group-item">{{ tag[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ tag[1].size }}</span></button>
+      <button type="button" class="list-group-item" onClick="show({{category[0]}})">{{ tag[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ tag[1].size }}</span></button>
     {% endfor %}
 </div>
