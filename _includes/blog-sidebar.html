@@ -1,0 +1,16 @@
+<div class="col-xs-6 col-sm-1 col-lg-2 sidebar-offcanvas m-r-0" id="sidebar">
+
+   <p class="lead"><a href="">Categories:</a></p>
+<div class="list-group">
+
+    {% for category in site.categories %}
+    <button type="button" class="list-group-item">{{ category[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ category[1].size }}</span></button>
+    {% endfor %}
+</div>
+
+<div class="list-group">
+<p class="lead"><a href="">Tags:</a></p>
+    {% for tag in site.tags %}
+      <button type="button" class="list-group-item">{{ tag[0] | capitalize }}<span class="label label-default label-pill pull-xs-right">{{ tag[1].size }}</span></button>
+    {% endfor %}
+</div>
