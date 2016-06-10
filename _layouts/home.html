@@ -5,10 +5,6 @@ layout: default
                 <div class="row row-offcanvas row-offcanvas-right">
 
                     <div class="col-xs-12 col-lg-9">
-                        <p class="pull-right hidden-lg-up">
-                            <button type="button" class="btn btn-xs hanging-item" data-toggle="offcanvas" style="z-index: 50;"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                        </p>
-
 
                         <div class="jumbotron hanging-item m-b-0" id="jumboIndex">
                            <div class="background text-center"><h1 class="text-uppercase font-weight-bold">{{title}}</h1>
@@ -23,7 +19,7 @@ layout: default
                             <div class="carousel-inner" role="listbox">
                                {% for game in new_games limit:5 %}
                                 <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                                    <a tabindex="-1" href="{{game.url}}" class="portfolio-box">
+                                    <button tabindex="-1" type="button" data-toggle="modal" data-target="#{{game.title_no_spaces}}Modal" class="btn-no-style portfolio-box">
                         <img src="{{game.header_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -40,7 +36,7 @@ layout: default
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </button>
                                 </div>
                                {% endfor %}
 

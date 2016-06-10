@@ -4,7 +4,7 @@
         <div class="footer-col-wrapper p-x-1">
             <div class="row" style="padding-top: .5em">
                 <div class="col-md-4 footer-col footer-col-2 text-xs-center text-md-left">
-                    © {{ site.title }}
+                    © <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y" }}</time> {{ site.title }}
                     <br>
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="col-md-4 footer-col text-xs-center text-md-right footer-col-3">
-                    {{site.description}}
+                    {{site.footer_text}}
                 </div>
                    <div class="col-xs-12 footer-col img-restrain" id="footerLogo">
                     {{site.logo_image}}

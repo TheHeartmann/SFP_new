@@ -22,7 +22,7 @@
 
         <div class="col-xs-12 col-sm-9 col-lg-10 m-r-1">
             <header class="post-header">
-                <h2 class="post-title display-4" itemprop="name headline">{{ page.title }}{% if game %}<small class="text-muted"><br>—Music from <a href="/games/{{game.title}}/">{{game.title}}</a></small>{% endif %}</h2>
+                <h2 class="post-title display-4" itemprop="name headline">{{ page.title }}{% if game %}<small class="text-muted"><br>—Music from <a tabindex="0" href="#" data-toggle="modal" data-target="#{{game.title_no_spaces}}Modal">{{game.title}}</a></small>{% endif %}</h2>
                 <p class="post-meta">
                     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="mailto:{{ author.mail }}">{{author.title}}</a></span></span>{% endif %}</p>
             </header>
