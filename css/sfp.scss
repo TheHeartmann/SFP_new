@@ -263,8 +263,10 @@ outline: none;
     margin-top: -4px;
 }
 
-@media (max-width: 978px) {
- margin-right: 300px;
+@media (max-width: 1200px) {
+#sidebar {
+    margin-right: 30px;
+}
 }
 
 .about-pic {
