@@ -74,6 +74,8 @@ background-color: rgba(0,0,0,.5);
 .container-fluid {
     max-width: 1200px !important;
     overflow: hidden;
+        border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 
 .carousel-img {
@@ -447,5 +449,15 @@ tbody {
 }
 
 .table-home {
-    width: 96%;
+    width: 100%;
+}
+
+body {
+     //background-image: url(/assets/img/logo/logo_border_noText.png);
+    //background-size: cover;
+    background-color: $sfp-blue-faint;
+}
+
+.sidebar-offcanvas {
+    height: 100%;
 }

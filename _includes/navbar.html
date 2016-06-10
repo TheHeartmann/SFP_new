@@ -14,9 +14,9 @@
    {% assign currentTitle = page.title %}
 
     <div class="collapse navbar-toggleable-md hidden-lg-up pull-xs-right m-r-0 p-r-0" id="collapsedNavbar">
-        <ul class="nav navbar-nav m-r-0 p-r-0">
+        <ul class="nav navbar-nav m-t-0 p-t-0 m-r-0 p-r-0">
             {% for page in pages %}{% if page.title %}
-            <li class="nav-item m-x-0 p-x-0 pull-xs-none pull-md-left {% if page.title == currentTitle %} active{% endif %}">
+            <li class="nav-item m-x-0 p-x-0 pull-xs-left {% if page.title == currentTitle %} active{% endif %}">
                 <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
 {% endif %}
