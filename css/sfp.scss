@@ -397,7 +397,6 @@ display: table;
 list-style: none;
     border-bottom-left-radius: .5em;
     overflow: hidden;
-   // border-bottom-right-radius: .5em;
 }
 #collapsedNavbar ul li {
 display: table-cell;
@@ -413,4 +412,5 @@ display: block;
     width: 9.4em;
     //border: 2px solid red;
    // background-color: rgba(255,255,255,0)
+    border: none;
 }
