@@ -42,10 +42,11 @@ $(document).ready(function () {
       if (tagIndex < 0){
         tagArray.push(tag);
           showClear();
-          $(this).addClass("active");
+          $('button'+tag).addClass("active");
+
       } else {
           tagArray.splice(tagIndex, 1);
-          $(this).removeClass("active");
+          $('button'+tag).removeClass("active");
       }
 
       showPosts();
@@ -101,4 +102,8 @@ function activateButtons(){
              }
 
           })
+}
+
+function activateDuplicates(){
+
 }

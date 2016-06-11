@@ -37,11 +37,11 @@
             </div>
             <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong>
                 <br> {% for tag in page.tags %}
-                <button class="btn btn-info tag-button" data-toggle:="filter" role="button">{{tag}}</button>
+                <button class="btn btn-info tag-button {{tag}}" data-toggle="filter" role="button">{{tag}}</button>
                 {% endfor %} {% endif %}</div>
             <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong>
                 <br>{% for category in page.categories %}
-                <button class="btn btn-warning tag-button" data-toggle:="filter" role="button">{{category}}</button>
+                <button class="btn btn-warning tag-button {{category}}" data-toggle="filter" role="button">{{category}}</button>
                 {% endfor %}{% endif %}</div>
         </div>
 

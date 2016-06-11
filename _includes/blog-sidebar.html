@@ -14,14 +14,14 @@
 <div class="list-group">
    <p class="lead">Categories:</p>
     {% for cat in cats %}
-    <button type="button" class="list-group-item tag-button" data-toggle="filter">{{ cat }}</button>
+    <button type="button" class="list-group-item tag-button {{cat}}" data-toggle="filter">{{ cat }}</button>
     {% endfor %}
 </div>
 
 <div class="list-group">
 <p class="lead">Tags:</p>
     {% for tag in tags %}
-      <button type="button" class="list-group-item tag-button" data-toggle="filter" >{{ tag }}</button>
+      <button type="button" class="list-group-item tag-button {{tag}}" data-toggle="filter" >{{ tag }}</button>
     {% endfor %}
 </div>
 
