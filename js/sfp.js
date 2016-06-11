@@ -35,7 +35,7 @@ $(document).ready(function () {
   $('[data-toggle="filter"]').click(function () {
       var tag=$(this).text().toLowerCase();
      // var tagArray = [];
-      //tagArray[0]=tag;
+      //ftagArray[0]=tag;
 
       if($(this).hasClass("active")){
           clearFilter();
