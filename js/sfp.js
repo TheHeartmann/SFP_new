@@ -48,21 +48,8 @@ $(document).ready(function () {
           $(this).removeClass("active");
       }
 
-      if (tagArray.length==0){
-          clearFilter();
-      } else {
-          $("article.blog-post").show().each(function(){
-            if($(this).is(tagArray.join(''))){
-                $(this).show;
-            } else {
-                $(this).hide();
-            }
-      })
-      }
-
-
-
-
+      showPosts();
+      activateButtons();
 
   });
 
@@ -70,6 +57,8 @@ $(document).ready(function () {
 
     function clearFilter() {
         $("button.tag-button").removeClass("active");
+        $("button.tag-button").removeClass("disabled");
+        $("button.tag-button").removeAttr("disabled");
       $("article.blog-post").show();
         tagArray=[];
         hideClear();
@@ -81,3 +70,35 @@ function showClear() {
 function hideClear() {
         $("#clear").hide();
     }
+
+function showPosts(){
+    if (tagArray.length==0){
+          clearFilter();
+      } else {
+          $("article.blog-post").show().each(function(){
+            if($(this).is(tagArray.join(''))){
+                $(this).show;
+            } else {
+                $(this).hide();
+            }
+      })
+      }
+}
+
+function activateButtons(){
+   $('.tag-button').each(function(){
+            var btnText=$(this).text();
+            var btnTag='.'+btnText;
+
+          if ($("article.blog-post"+tagArray.join('')+btnTag).length){
+              if ($(this).hasClass('disabled')){
+                  $(this).removeClass('disabled');
+                  $(this).removeAttr('disabled');
+              }
+              } else {
+                 $(this).addClass('disabled');
+                  $(this).attr('disabled', 'disabled');
+             }
+
+          })
+}
