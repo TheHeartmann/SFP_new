@@ -2,7 +2,11 @@
 {% assign author = authorArray.first %}
 {% if page.game %} {% assign gameArray = site.games | where:"title", page.game %}{% assign game = gameArray.first %} {% endif %}
 
-<article class="post m-t-1 p-b-3" itemscope itemtype="http://schema.org/BlogPosting">
+
+<article class="post blog-post
+   {% if page.tags.size > 0 %}{% for tag in page.tags %}{{tag}} {% endfor %}{% endif %}
+   {% if page.categories.size > 0 %}{% for category in page.categories %}{{category}} {% endfor %}{% endif %}
+     m-t-1 p-b-3" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="row">
 
 
@@ -40,7 +44,6 @@
                 <button class="btn btn-warning" href="{{category.url}}" role="button">{{category}}</button>
                 {% endfor %}{% endif %}</div>
         </div>
-
 
     </div>
 </article>

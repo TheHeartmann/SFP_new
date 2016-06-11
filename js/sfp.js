@@ -1,3 +1,5 @@
+
+
 function alertAndClear(formID){
     alert('Thank you for getting in touch. We will process your enquiry and get back to you shortly.');
     document.getElementById(formID).reset();
@@ -28,3 +30,31 @@ function submitForm(){
             $("#thankYou").show();
             return false;
 }
+
+$(document).ready(function () {
+  $('[data-toggle="filter"]').click(function () {
+      var tag=$(this).text().toLowerCase();
+     // var tagArray = [];
+      //tagArray[0]=tag;
+
+      if($(this).hasClass("active")){
+          clearFilter();
+      } else{
+          if ($(".btn-cat.active").length){
+             // $(".btn-cat.active").text().toLowerCase()
+              $(".btn-cat.active").removeClass("active");
+          }
+          $(this).addClass("active");
+          $("article.blog-post").show()
+          $("article.blog-post").not("."+tag).hide()
+
+      }
+  });
+
+});
+
+    function clearFilter() {
+        $("button.btn-cat").removeClass("active");
+      $("article.blog-post").show();
+    }
+
