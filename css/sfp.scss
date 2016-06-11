@@ -3,14 +3,20 @@
 
 @charset 'utf-8';
 //Variables
-$sfp-blue: #8ce7f9;
-$sfp-blue-faint: rgba(140,231,249, .8);
-$sfp-gold: #d3a628;
-$sfp-gold-faint: rgba(211,166,40, 0.8);
+$blue: #8ce7f9;
+$blue-faint: rgba(140,231,249, .8);
+$gold: #d3a628;
+$gold-faint: rgba(211,166,40, 0.8);
+$red: #e03b45;
+$red-faint: rgba(224,59,69, .8);
+$orange:  #FF5500;
+$orange-faint: rgba(255,85,0, .8);
+$green: #239F60;
+$green-faint:rgba(35,159,96,.8);
 
 
 .navbar {
-  background-color: $sfp-gold;
+  background-color: $gold;
     border-bottom: none;
     max-height: 50px;
 
@@ -32,7 +38,7 @@ body {
 }
 
 button {
-    background-color: $sfp-blue;
+    background-color: $blue;
 }
 
 
@@ -100,7 +106,7 @@ background-color: rgba(0,0,0,.5);
 
 .background {
     background-color: rgba(255,255,255,.75);
-    border: 0.5px solid $sfp-gold;
+    border: 0.5px solid $gold;
     border-radius: .5em;
 }
 
@@ -137,7 +143,7 @@ background-color: rgba(0,0,0,.5);
   color: white;
   opacity: 0;
   display: block;
-  background: $sfp-blue-faint;
+  background: $blue-faint;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -193,8 +199,8 @@ outline: none;
 
 .carousel-control {
     &:hover{
-        //color: $sfp-blue;
-        //background-color: $sfp-gold-faint;
+        //color: $blue;
+        //background-color: $gold-faint;
     }
 }
 
@@ -202,8 +208,8 @@ outline: none;
 .nav-tabs .nav-item.open .nav-link,
 .nav-tabs .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover {
-  color: $sfp-blue-faint;
-  background-color: $sfp-blue-faint !important;
+  color: $blue-faint;
+  background-color: $blue-faint !important;
   border-color: #000 #000 transparent #000;
 }
 
@@ -277,7 +283,7 @@ outline: none;
   color: white;
   opacity: 0;
   display: block;
-  background: $sfp-gold-faint;
+  background: $gold-faint;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -289,7 +295,7 @@ outline: none;
 }
 
 .about-box {
-     background: $sfp-gold-faint !important;
+     background: $gold-faint !important;
 }
 
 .profile-overlay {
@@ -332,7 +338,7 @@ outline: none;
 }
 
 .game-header {
- border-bottom: 1px solid $sfp-gold-faint;
+ border-bottom: 1px solid $gold-faint;
     border-bottom-left-radius: .5em;
     overflow: hidden;
 }
@@ -344,7 +350,7 @@ outline: none;
 
 
 .modal-header {
-    background-color: $sfp-gold;
+    background-color: $gold;
     border-bottom: none;
 }
 
@@ -402,7 +408,7 @@ background: none;
 //Nav spacing
 #collapsedNavbar ul {
 display: table;
-    background-color: $sfp-gold;
+    background-color: $gold;
 list-style: none;
     border-bottom-left-radius: .5em;
     overflow: hidden;
@@ -461,7 +467,7 @@ tbody {
 body {
      //background-image: url(/assets/img/logo/logo_border_noText.png);
     //background-size: cover;
-    background-color: $sfp-blue-faint;
+    background-color: $blue-faint;
 }
 
 .sidebar-offcanvas {
@@ -473,5 +479,15 @@ body {
 }
 
 .label-default {
-    background-color: $sfp-gold-faint;
+    background-color: $gold-faint;
+}
+
+#clear {
+    display:none;
+    & button{
+         background-color: $red !important;
+        &:active{
+            background-color: $green !important;
+        }
+    }
 }

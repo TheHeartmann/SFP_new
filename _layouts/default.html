@@ -13,7 +13,6 @@
                 {{ content }}
 
         {% include footer.html %}
-        {% include js.html %}
     </div>
 
 
@@ -23,5 +22,6 @@
 {% for game in site.games %}
 {{game}}
 {% endfor %}
+{% include js.html %}
 
 </html>

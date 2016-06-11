@@ -1,4 +1,4 @@
-
+var tagArray = [];
 
 function alertAndClear(formID){
     alert('Thank you for getting in touch. We will process your enquiry and get back to you shortly.');
@@ -33,28 +33,51 @@ function submitForm(){
 
 $(document).ready(function () {
   $('[data-toggle="filter"]').click(function () {
-      var tag=$(this).text().toLowerCase();
-     // var tagArray = [];
-      //ftagArray[0]=tag;
+     //Assign tag
+      var text=$(this).text();
+      var tag='.'+text;
 
-      if($(this).hasClass("active")){
-          clearFilter();
-      } else{
-          if ($(".btn-cat.active").length){
-             // $(".btn-cat.active").text().toLowerCase()
-              $(".btn-cat.active").removeClass("active");
-          }
+      //Add or remove from array
+      var tagIndex=tagArray.indexOf(tag);
+      if (tagIndex < 0){
+        tagArray.push(tag);
+          showClear();
           $(this).addClass("active");
-          $("article.blog-post").show()
-          $("article.blog-post").not("."+tag).hide()
-
+      } else {
+          tagArray.splice(tagIndex, 1);
+          $(this).removeClass("active");
       }
+
+      if (tagArray.length==0){
+          clearFilter();
+      } else {
+          $("article.blog-post").show().each(function(){
+            if($(this).is(tagArray.join(''))){
+                $(this).show;
+            } else {
+                $(this).hide();
+            }
+      })
+      }
+
+
+
+
+
   });
 
 });
 
     function clearFilter() {
-        $("button.btn-cat").removeClass("active");
+        $("button.tag-button").removeClass("active");
       $("article.blog-post").show();
+        tagArray=[];
+        hideClear();
+    }
+function showClear() {
+        $("#clear").show();
     }
 
+function hideClear() {
+        $("#clear").hide();
+    }
