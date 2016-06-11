@@ -23,74 +23,72 @@ defaults:
     type: pages
   values:
     layout: page
-    title: 
-    permalink: 
+    title:
+    permalink:
     has_sidebar: false
-    sidebar_icon: 
+    sidebar_icon:
 - scope:
     path: ''
     type: games
   values:
-    main_image: 
-    header_image: 
+    main_image:
+    header_image:
     layout: game
-    title_no_spaces: 
-    sc_embed_url: 
-    shop_url: 
-    shop_name: 
-    available_at: 
-    yt_embed_url: 
-    title: 
-    release_date: 
-    developer: 
-    developer_website: 
-    genre: 
-    music_genre: 
-    featured_instrument: 
-    roles: 
+    title_no_spaces:
+    sc_embed_url:
+    shop_url:
+    shop_name:
+    available_at:
+    yt_embed_url:
+    title:
+    release_date:
+    developer:
+    developer_website:
+    genre:
+    music_genre:
+    featured_instrument:
+    roles:
 - scope:
     path: ''
     type: quotes
   values:
     layout: quote
-    game: 
-    author: 
-    publication: 
-    url: 
-    quote_date: 
+    game:
+    author:
+    publication:
+    url:
+    quote_date:
 - scope:
     path: ''
     type: people
   values:
     layout: post
-    profile_image: 
-    mail: 
-    name: 
-    full_name: 
+    profile_image:
+    mail:
+    name:
+    full_name:
 - scope:
     path: ''
     type: posts
   values:
     layout: post
     person: SFP
-    game: 
-    sc_embed_url: 
-posts: 
+    game:
+    sc_embed_url:
+posts:
 output: true
-uploads: 
+uploads:
 email: contact@soundsforpixels.com
 description: |
   Want music that makes your game pop? Sound effects that brings your characters to life? Look no further: Sounds for Pixels are here to help!
 footer_text: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl: 
+baseurl:
 url: http://soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
 github_username: TheHeartmann
 twitter_feed_limit: 5
-paginate: 5
-paginate_path: "/_site/page:num"
 playlist: <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/228426702&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 blue: 8ce7f9
 gold: d3a628
@@ -109,15 +107,3 @@ lorem_ipsum: Donec id elit non mi porta gravida at eget metus. Fusce dapibus, te
   ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
   amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 markdown: kramdown
-gems:
-- jekyll-paginate
-- jekyll-archives
-jekyll-archives:
-  enabled: all
-  layout: archive
-  permalinks:
-    year: "/:year/"
-    month: "/:year/:month/"
-    day: "/:year/:month/:day/"
-    tag: "/tag/:name/"
-    category: "/category/:name/"
