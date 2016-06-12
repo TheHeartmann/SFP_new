@@ -25,9 +25,7 @@ $green-faint:rgba(35,159,96,.8);
     }
 }
 
-.wrapper {
-    border-top: 1px solid #606060;
-}
+
 
 .navbar-fixed-top {
     padding-bottom: 0;
@@ -486,8 +484,19 @@ body {
     display:none;
     & button{
          background-color: $red !important;
+        border: 1px solid $blue;
         &:active{
             background-color: $green !important;
         }
     }
 }
+
+footer{
+    border-top: 1px solid #606060;
+}
+
+footer {
+    clear: both;
+}
+
+

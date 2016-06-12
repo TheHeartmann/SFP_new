@@ -4,8 +4,8 @@
 
 
 <article class="post blog-post
-   {% if page.tags.size > 0 %}{% for tag in page.tags %}{{tag}} {% endfor %}{% endif %}
-   {% if page.categories.size > 0 %}{% for category in page.categories %}{{category}} {% endfor %}{% endif %}
+   {% if page.tags.size > 0 %}{% for tag in page.tags %}{{tag | remove: ' '}} {% endfor %}{% endif %}
+   {% if page.categories.size > 0 %}{% for category in page.categories %}{{category | remove: ' '}} {% endfor %}{% endif %}
      m-t-1 p-b-3" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="row">
 
@@ -37,11 +37,11 @@
             </div>
             <div class="tags">{% if page.tags.size > 0 %} <strong>Tags:</strong>
                 <br> {% for tag in page.tags %}
-                <button class="btn btn-info tag-button {{tag}}" data-toggle="filter" role="button">{{tag}}</button>
+                <button class="btn btn-info tag-button {{tag | remove: ' '}}" data-toggle="filter" role="button">{{tag}}</button>
                 {% endfor %} {% endif %}</div>
             <div class="categories">{% if page.categories.size > 0 %} <strong>Categories: </strong>
                 <br>{% for category in page.categories %}
-                <button class="btn btn-warning tag-button {{category}}" data-toggle="filter" role="button">{{category}}</button>
+                <button class="btn btn-warning tag-button {{category | remove: ' '}}" data-toggle="filter" role="button">{{category}}</button>
                 {% endfor %}{% endif %}</div>
         </div>
 

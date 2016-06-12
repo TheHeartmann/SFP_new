@@ -8,6 +8,7 @@ categories:
 tags:
 - testing
 - spotlight
+- multi word tag test
 person: Thomas
 layout: post
 ---

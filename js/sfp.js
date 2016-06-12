@@ -35,6 +35,9 @@ $(document).ready(function () {
   $('[data-toggle="filter"]').click(function () {
      //Assign tag
       var text=$(this).text();
+      if(text.indexOf('') > -1){
+          text = text.replace(/\s+/g, '');
+      }
       var tag='.'+text;
 
       //Add or remove from array
@@ -89,6 +92,9 @@ function showPosts(){
 function activateButtons(){
    $('.tag-button').each(function(){
             var btnText=$(this).text();
+       if(text.indexOf('') > -1){
+          text = text.replace(/\s+/g, '');
+      }
             var btnTag='.'+btnText;
 
           if ($("article.blog-post"+tagArray.join('')+btnTag).length){
