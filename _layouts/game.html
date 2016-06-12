@@ -21,7 +21,7 @@
                                     {% endfor %}</small></h2>
                 </div>
                 <div class="col-xs-12">
-                    <p class="lead">Developed by <a href="{{page.developer_website}}">{{page.developer}}</a>
+                    <p class="lead">Developed by {% if page.developer_website %}<a href="{{page.developer_website}}">{{page.developer}}</a>{% else %}{{page.developer}}{% endif %}
                         <br>Release date:
                         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.release_date | date: "%b %-d, %Y" }}</time>
                     </p>

@@ -7,12 +7,15 @@ $blue: #8ce7f9;
 $blue-faint: rgba(140,231,249, .8);
 $gold: #d3a628;
 $gold-faint: rgba(211,166,40, 0.8);
-$red: #e03b45;
-$red-faint: rgba(224,59,69, .8);
+$red: #9d636e;
+$red-faint: rgba(157,99,110, .8);
 $orange:  #FF5500;
 $orange-faint: rgba(255,85,0, .8);
-$green: #239F60;
-$green-faint:rgba(35,159,96,.8);
+$green: #4e847b;
+$green-faint:rgba(78,132,123,.8);
+$dblue:#4D6D90;
+$dblue-faint:rgba(77,109,144,.8);
+
 
 
 .navbar {
@@ -525,4 +528,10 @@ footer {
 .index-info {
     padding-left: .2rem;
     padding-right: .2rem;
+}
+
+.btn-taglist {
+    &.active{
+        background-color: $green !important;
+    }
 }

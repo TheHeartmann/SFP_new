@@ -24,7 +24,7 @@ layout: game
 
 # Trench Run
 {{site.lorem_ipsum}}
->Oh, this is fantastic! — some guy
+> Oh, this is fantastic! — some guy
 
 ## Hot multiplayer action
 ***{{site.lorem_ipsum}}***
