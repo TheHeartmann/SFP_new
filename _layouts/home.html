@@ -2,11 +2,12 @@
 layout: default
 ---
 
-<div class="row row-offcanvas row-offcanvas-right">
+<div class="row row-offcanvas row-offcanvas-right m-x-0 p-x-0" id="home-row">
 
-    <div class="col-xs-12 col-lg-9">
+    <div class="col-xs-12 col-lg-9 p-x-0 m-x-0">
 
-        <div class="jumbotron hanging-item m-b-0" id="jumboIndex">
+        <div class="header-container">
+           <div class="jumbotron hanging-item m-b-0 m-x-0 p-x-0" id="jumboIndex">
             <div class="background text-center">
                 <h1 class="text-uppercase font-weight-bold">{{title}}</h1>
                 <p>{{content}}</p>
@@ -15,7 +16,7 @@ layout: default
         </div>
 
         <!--Carousel-->
-        <div id="carouselIndex" class="carousel slide p-t-0 m-b-1" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
+        <div id="carouselIndex" class="carousel slide p-t-0 m-b-1 m-x-0 p-x-0" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
 
             {% assign new_games = site.games | reverse %}
             <div class="carousel-inner" role="listbox">
@@ -47,37 +48,23 @@ layout: default
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <!--Page Table-->
-        <div class="row m-x-1">
-            <table class="table table-home">
- <!--{% assign pages = site.pages | sort: "index_number" %}-->
-               <!--3-col table-->
-                <tbody class="hidden-sm-down">
-                     {% for page in pages %} {% if page.position > 0 %}
-                    {% cycle '<tr>', '', '' %}
-                        <td class="td-third"> <a href="{{page.url}}">{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}</a>
-               <!-- <h2>{{ page.title }}</h2>-->
-                <p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}  {% cycle '', {{site.lorem_ipsum}}, '' %} <br><a class="btn btn-default" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a> </p>
-                <p></p></td>
-                    {% cycle '', '', '</tr>' %}
-                    {% endif %} {% endfor %}
-                </tbody>
-
-                <!--2-col table for small screens-->
-                <tbody class="hidden-md-up">
-                     {% for page in pages %} {% if page.position > 0 %}
-                    {% cycle '<tr>', '' %}
-                        <td class="td-half"> <a href="{{page.url}}">{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}</a>
-                <h2>{{ page.title }}</h2>
-                <p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}  {% cycle '', {{site.lorem_ipsum}}, '' %} <br><a class="btn btn-default" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a></p>
-                <p></p></td>
-                    {% cycle '', '</tr>' %}
-                    {% endif %} {% endfor %}
-                </tbody>
-            </table>
         </div>
 
+
+ <!--{% assign pages = site.pages | sort: "index_number" %}-->
+            <!--Page list 2.0-->
+ <div class="row m-x-1 p-x-0">
+              <div class="container-fluid">
+               {% for page in pages %} {% if page.position > 0 %}
+                <div class="col-md-4 col-sm-6 p-a-0 m-a-0">
+                    <a href="{{page.url}}">{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}</a>
+               <!-- <h2>{{ page.title }}</h2>-->
+                <p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}  {% cycle '', {{site.lorem_ipsum}}, '' %} <br><a class="btn btn-default" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a> </p>
+                </div>
+                {% cycle '', '', '<div class="clearfix hidden-sm-down"></div>' %}
+                {% endif %}{% endfor %}
+     </div>
+</div>
 
     </div>
     <!--/.col-xs-12.col-sm-9-->

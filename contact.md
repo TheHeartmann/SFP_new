@@ -7,6 +7,7 @@ index_number: 5
 thankyou_header: Thank you for getting in touch!
 thankyou_msg: We will process your enquiry and get back to you shortly.
 regards: "—the Sounds for Pixels team"
+send_new: Got more to say? Forgot something? Send another email!
 layout: contact
 ---
 

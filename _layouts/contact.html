@@ -36,6 +36,7 @@ layout: page
     <h1 class="display-4">{{page.thankyou_header}}<small class="text-muted"><br>{{page.thankyou_msg}}</small></h1>
     <p class="lead">{{page.regards}}</p>
     {{site.logo_image}}
+    <button class="btn" onclick="toggleView()">{{page.send_new}}</button>
 </div>
 
 
@@ -43,11 +44,15 @@ layout: page
 <script>
     $(document).ready(function () {
         $("#contactForm").submit(function (e) {
-
-            $("#formDiv").hide();
-            $("#footerLogo").hide();
-            $("#thankYou").show();
+             document.getElementById("contactForm").reset();
+            toggleView();
 
         });
     });
+
+    function toggleView(){
+        $("#formDiv").toggle();
+            $("#footerLogo").toggle();
+            $("#thankYou").toggle();
+    }
 </script>

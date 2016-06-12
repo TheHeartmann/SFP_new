@@ -25,7 +25,7 @@
                         <br>Release date:
                         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.release_date | date: "%b %-d, %Y" }}</time>
                     </p>
-                    <div class="col-xs-12 p-b-1">{{page.sc_embed_url}}</div>
+                    <div class="col-xs-12 p-b-1">{% for url in page.sc_embed_url %}{{url}}{% endfor %}</div>
                 </div>
             </div>
             <div class="row m-x-1 p-b-1">
