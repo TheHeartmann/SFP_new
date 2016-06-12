@@ -6,7 +6,7 @@ layout: default
 
     <div class="col-xs-12 col-lg-9 p-x-0 m-x-0">
 
-        <div class="header-container">
+        <div class="header-container m-x-1 m-b-1">
            <div class="jumbotron hanging-item m-b-0 m-x-0 p-x-0" id="jumboIndex">
             <div class="background text-center">
                 <h1 class="text-uppercase font-weight-bold">{{title}}</h1>
@@ -16,7 +16,7 @@ layout: default
         </div>
 
         <!--Carousel-->
-        <div id="carouselIndex" class="carousel slide p-t-0 m-b-1 m-x-0 p-x-0" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
+        <div id="carouselIndex" class="carousel slide p-t-0 m-x-0 p-x-0" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
 
             {% assign new_games = site.games | reverse %}
             <div class="carousel-inner" role="listbox">
@@ -56,7 +56,7 @@ layout: default
  <div class="row m-x-1 p-x-0">
               <div class="container-fluid">
                {% for page in pages %} {% if page.position > 0 %}
-                <div class="col-md-4 col-sm-6 p-a-0 m-a-0">
+                <div class="col-md-4 col-sm-6 index-info">
                     <a href="{{page.url}}">{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}</a>
                <!-- <h2>{{ page.title }}</h2>-->
                 <p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}  {% cycle '', {{site.lorem_ipsum}}, '' %} <br><a class="btn btn-default" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a> </p>
@@ -70,7 +70,7 @@ layout: default
     <!--/.col-xs-12.col-sm-9-->
 
     <!--Twitter feed-->
-    <div class="col-xs-6 col-sm-3 sidebar-offcanvas m-r-0" id="sidebar">
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas m-r-0 p-r-0" id="sidebar">
         <a class="twitter-timeline" href="https://twitter.com/soundsforpixels" data-widget-id="738308741876047873" height="1200" data-chrome=" noscrollbar noheader" data-theme="dark" data-border-color="#{{site.blue}}" data-link-color="#{{site.gold}}">Tweets by @soundsforpixels</a>
         <!--removed: data-tweet-limit="{{site.twitter_feed_limit}}"-->
         <script>
