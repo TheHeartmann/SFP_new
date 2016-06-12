@@ -34,10 +34,7 @@ function submitForm(){
 $(document).ready(function () {
   $('[data-toggle="filter"]').click(function () {
      //Assign tag
-      var text=$(this).text();
-      if(text.indexOf('') > -1){
-          text = text.replace(/\s+/g, '');
-      }
+      var text=$(this).text().replace(/\s+/g, '');
       var tag='.'+text;
 
       //Add or remove from array
@@ -61,8 +58,10 @@ $(document).ready(function () {
 
     function clearFilter() {
         $("button.tag-button").removeClass("active");
-        $("button.tag-button").removeClass("disabled");
+/*        $("button.tag-button").removeClass("disabled");
         $("button.tag-button").removeAttr("disabled");
+        $("button.tag-button").removeAttr("disabled");*/
+        $("button.tag-button").show();
       $("article.blog-post").show();
         tagArray=[];
         hideClear();
@@ -91,25 +90,21 @@ function showPosts(){
 
 function activateButtons(){
    $('.tag-button').each(function(){
-            var btnText=$(this).text();
-       if(text.indexOf('') > -1){
-          text = text.replace(/\s+/g, '');
-      }
+            var btnText=$(this).text().replace(/\s+/g, '');
             var btnTag='.'+btnText;
 
           if ($("article.blog-post"+tagArray.join('')+btnTag).length){
-              if ($(this).hasClass('disabled')){
+             /* if ($(this).hasClass('disabled')){
                   $(this).removeClass('disabled');
-                  $(this).removeAttr('disabled');
+                  $(this).removeAttr('disabled');*/
+              if($(this).is(':visible')){
+                  $(this).show();
               }
               } else {
-                 $(this).addClass('disabled');
-                  $(this).attr('disabled', 'disabled');
+/*                 $(this).addClass('disabled');
+                  $(this).attr('disabled', 'disabled');*/
+                  $(this).hide();
              }
 
           })
-}
-
-function activateDuplicates(){
-
 }
