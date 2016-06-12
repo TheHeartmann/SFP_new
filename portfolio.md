@@ -5,6 +5,7 @@ permalink: "/portfolio/"
 position: 1
 index_number: 1
 layout: portfolio
+description: a collection of kind words
 header_image: <img class="img img-responsive header-portfolio" src="/uploads/portfolio_header.png"
   alt="Portfolio">
 ---

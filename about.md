@@ -6,6 +6,7 @@ position: 5
 header_image: <img class="img img-responsive about-header" src="/uploads/about_header.png"
   alt="About SFP">
 index_number: 4
+description: a collection of kind words
 layout: about
 ---
 

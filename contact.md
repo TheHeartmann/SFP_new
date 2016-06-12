@@ -9,6 +9,7 @@ thankyou_msg: We will process your enquiry and get back to you shortly.
 regards: "—the Sounds for Pixels team"
 send_new: Got more to say? Forgot something? Send another email!
 layout: contact
+description: a collection of kind words
 header_image: <img class="img img-responsive header-contact" src="/uploads/contact_header.png"
   alt="Contact us">
 ---
