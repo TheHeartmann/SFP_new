@@ -22,7 +22,7 @@ layout: default
             <div class="carousel-inner" role="listbox">
                 {% for game in new_games limit:5 %}
                 <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                    <button tabindex="-1" type="button" data-toggle="modal" data-target="#{{game.title_no_spaces}}Modal" class="btn-no-style portfolio-box">
+                    <button tabindex="-1" type="button" data-toggle="modal" onclick="showModal('#{{game.title_no_spaces}}Modal')" class="btn-no-style portfolio-box">
                         <img src="{{game.header_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
