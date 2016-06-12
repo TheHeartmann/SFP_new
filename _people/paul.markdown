@@ -6,7 +6,7 @@ mail: paul@soundsforpixels.com
 name: Paul
 full_name: Paul Zimmermann
 fav_vgm:
-- Monkey Island 
+- Monkey Island
 - The Legend of Zelda
 - Warcraft II
 ---
