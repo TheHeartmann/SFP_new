@@ -6,5 +6,7 @@ position: 6
 index_number: 6
 shop_url: https://soundsforpixels.bandcamp.com/
 layout: shop
+header_image: <img class="img img-responsive shop-header" src="/uploads/shop_header.png"
+  alt="Shop">
 ---
 

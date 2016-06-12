@@ -5,6 +5,7 @@ permalink: "/reviews/"
 position: 3
 index_number: 3
 layout: quote
+header_image: <img class="img img-responsive header-reviews" src="/uploads/reviews_header.png"
+  alt="Press reviews">
 ---
 
-Press reviews go here.

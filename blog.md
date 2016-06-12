@@ -7,6 +7,8 @@ index_number: 2
 layout: blog
 has_sidebar: true
 sidebar_icon: <i class="fa fa-tags" aria-hidden="true"></i>
+header_image: <img class="img img-responsive header-blog" src="/uploads/blog_header.png"
+  alt="Blog">
 ---
 
 This is where the blog will go.

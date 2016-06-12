@@ -7,6 +7,8 @@ header_image: <img class="img img-responsive" src="/assets/img/headers/header_fa
   alt="The boys">
 index_number: 4
 layout: about
+header_image: <img class="img img-responsive about-header" src="/uploads/about_header.png"
+  alt="About SFP">
 ---
 
 Here's the about section. This is where we put a short description of SFP, why we do what we do, how we do it, maybe workflow, etc. Introduction to individual people will be below.

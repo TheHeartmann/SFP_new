@@ -15,6 +15,7 @@ $green: #4e847b;
 $green-faint:rgba(78,132,123,.8);
 $dblue:#4D6D90;
 $dblue-faint:rgba(77,109,144,.8);
+$yellow: #a79374;
 
 
 
@@ -553,4 +554,28 @@ footer {
 
 .modal-overlay * {
     font-size: 5em !important;
+}
+
+.header-contact {
+    background-color: $blue;
+}
+
+.header-portfolio {
+    background-color: $dblue;
+}
+
+.header-blog {
+    background-color: $red;
+}
+
+.header-reviews {
+    background-color: $yellow;
+}
+
+.shop-header {
+    background-color: $gold;
+}
+
+.about-header {
+    background-color: $green;
 }
