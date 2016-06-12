@@ -5,17 +5,19 @@ permalink: games/checkmate/
 title_no_spaces: Checkmate
 sc_embed_url:
 - <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/268729949%3Fsecret_token%3Ds-3Pky5&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
-yt_embed_url: <iframe width="560" height="315" src="https://www.youtube.com/embed/uSOE49Hwg4w" frameborder="0" allowfullscreen></iframe>
+yt_embed_url: <iframe width="560" height="315" src="https://www.youtube.com/embed/uSOE49Hwg4w"
+  frameborder="0" allowfullscreen></iframe>
 shop_url: http://www.indiedb.com/games/checkmate/
 shop_name: IndieDB
-available_at: This game is still in development, but scheduled to go on Steam Greenlight before long. In the meantime, check out the trailer below or head on over to
+available_at: This game is still in development, but scheduled to go on Steam Greenlight
+  before long. In the meantime, check out the trailer below or head on over to
 header_image: "/uploads/checkmate_carousel.png"
 main_image: "/uploads/checkmate_main.png"
 release_date: TBD
 developer: Gavin Kwekkeboom
-developer_website:
+developer_website: 
 genre: Strategy
-music_genre:
+music_genre: 
 featured_instrument: guitar
 roles:
 - OST
