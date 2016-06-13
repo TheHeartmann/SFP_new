@@ -23,70 +23,70 @@ defaults:
     type: pages
   values:
     layout: page
-    title:
-    permalink:
+    title: 
+    permalink: 
     has_sidebar: false
-    sidebar_icon:
+    sidebar_icon: 
 - scope:
     path: ''
     type: games
   values:
-    main_image:
-    header_image:
+    main_image: 
+    header_image: 
     layout: game
-    title_no_spaces:
-    sc_id:
-    shop_url:
-    shop_name:
-    available_at:
-    yt_id:
-    title:
-    release_date:
-    developer:
-    developer_website:
-    genre:
-    music_genre:
-    featured_instrument:
-    roles:
+    title_no_spaces: 
+    sc_id: 
+    shop_url: 
+    shop_name: 
+    available_at: 
+    yt_id: 
+    title: 
+    release_date: 
+    developer: 
+    developer_website: 
+    genre: 
+    music_genre: 
+    featured_instrument: 
+    roles: 
 - scope:
     path: ''
     type: quotes
   values:
-    layout:
-    game:
-    author:
-    publication:
-    url:
-    quote_date:
+    layout: 
+    game: 
+    author: 
+    publication: 
+    url: 
+    quote_date: 
 - scope:
     path: ''
     type: people
   values:
     layout: post
-    profile_image:
-    mail:
-    name:
-    full_name:
+    profile_image: 
+    mail: 
+    name: 
+    full_name: 
 - scope:
     path: ''
     type: posts
   values:
     layout: post
     person: SFP
-    game:
+    game: 
     sc_id:
-    -
-    -
-    -
-posts:
+    - 
+    - 
+    - 
+posts: 
 output: true
-uploads:
+uploads: 
 email: contact@soundsforpixels.com
 description: |
   Want music that makes your game pop? Sound effects that brings your characters to life? Look no further: Sounds for Pixels are here to help!
 footer_text: |
   A music-making, game-playing duo. Here to help you make YOUR game stand out!
-baseurl:
+baseurl: 
 url: http://soundsforpixels.com
 twitter_username: soundsforpixels
 instagram_username: soundsforpixels
