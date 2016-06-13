@@ -2,24 +2,23 @@
 layout: page
 ---
 
-<iframe src="" name="iSubmit" id="iSubmit" class="invisiframe" frameborder="0"></iframe>
 <div  id="formDiv">
 
          {{content}}
 <div class="m-x-2 p-b-1 text-center">
-    <form  id="contactForm" action="https://formspree.io/{{site.email}}" target="iSubmit" method="POST">
+    <form  id="contactForm">
         <fieldset>
 <!--         <input type="hidden" name="_next" value="//site.io/thanks.html" target="submitMore"/>-->
             <legend>Send us an email:</legend>
 <!--            Your email address:-->
             <!--<br>-->
-            <input type="email" name="_replyto" size="41" placeholder="your@email.com" required>
+            <input type="email" name="_replyto" id="email" size="41" placeholder="your@email.com" required>
             <br><!--Subject:-->
             <br>
-            <input type="text" name="_subject" size="41" placeholder="Subject" required>
+            <input type="text" name="_subject" id="subject" size="41" placeholder="Subject" required>
             <br><!--Message:-->
             <br>
-            <textarea name="message" rows="10" cols="40" placeholder="Tell us how we can help you!" required></textarea>
+            <textarea name="message" rows="10" id="comments" cols="40" placeholder="Tell us how we can help you!" required></textarea>
            <br><input type="text" name="_gotcha" style="display:none" />
            <div class="text-center">
               <input type="submit" class="btn btn-info" value="Fire it off!"> or
@@ -38,21 +37,3 @@ layout: page
     {{site.logo_image}}
     <button class="btn" onclick="toggleView()">{{page.send_new}}</button>
 </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $("#contactForm").submit(function (e) {
-             document.getElementById("contactForm").reset();
-            toggleView();
-
-        });
-    });
-
-    function toggleView(){
-        $("#formDiv").toggle();
-            $("#footerLogo").toggle();
-            $("#thankYou").toggle();
-    }
-</script>

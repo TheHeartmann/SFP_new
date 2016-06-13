@@ -593,3 +593,20 @@ footer {
   font-size: 1.25rem !important;
   font-weight: 300 !important;
 }
+
+.blockquote {
+    background-color: #f5f5f5 !important;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-left: .25rem solid darkgray;
+}
+
+.blockquote-reverse {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-right: .25rem solid darkgray;
+}

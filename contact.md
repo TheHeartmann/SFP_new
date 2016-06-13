@@ -7,7 +7,7 @@ description: Interested in hiring us? Want to ask some questions, have a little 
   or maybe you've found some issues with the website? If yes to any of the above,
   this is where you should turn your attention. Shoot us an email, and we'll get back
   to you shortly—pinky promise!
-read_more_text: Get in touch!
+read_more_text: Contact us!
 meta_description: Questions, quote inquiries, and feedback are all welcome here! Contact
   us via email, and we'll get back to you as soon as we can!
 index_number: 5
