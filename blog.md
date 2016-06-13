@@ -1,5 +1,6 @@
 ---
 title: Blog
+meta_description: Wonder how we approach composing video game music? Find news and detailed discussion of tracks right here, at the Sounds for Pixels blog!
 date: 2016-06-02 20:21:00 +02:00
 permalink: "/blog/"
 position: 2

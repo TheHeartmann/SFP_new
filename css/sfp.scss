@@ -534,7 +534,8 @@ footer {
 
 .btn-taglist {
     &.active{
-        background-color: $green !important;
+        background-color: $gold-faint !important;
+        border: 1px solid $gold !important;
     }
 }
 

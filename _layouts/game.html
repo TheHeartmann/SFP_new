@@ -8,7 +8,7 @@
 
 
             <div class="col-xs12 p-a-0 m-x-0">
-              {% if page.yt_embed_url %}
+              {% if page.yt_id %}
                <button class="btn-no-style btn-clock m-a-0 p-a-0 portfolio-box" data-toggle="video-toggle-img">
                   <img src="{{page.main_image}}" class="img img-responsive" alt="{{page.title}}" style="margin:auto;">
                   <div class="portfolio-box-caption">
@@ -19,7 +19,8 @@
                             </div>
                         </div>
                </button>
-                <div class="embed-responsive embed-responsive-16by9 modal-video">{{page.yt_embed_url}}</div>
+                <div class="embed-responsive embed-responsive-16by9 modal-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.yt_id}}?enablejsapi=1&version=3&playerapiid=ytplayer"
+  frameborder="0" allowfullscreen></iframe></div>
                 <button class="btn btn-info btn-block btn-modal" data-toggle="video-toggle">Toggle video</button>
                 {% else %}
                  <img src="{{page.main_image}}" class="img img-responsive" alt="{{page.title}}" style="margin:auto;">

@@ -1,5 +1,6 @@
 ---
 title: Shop
+meta_description: So you like our music and want to show us some support? Check out the game soundtracks we've got available for purchase, and help us keep working! Thanks!
 date: 2016-06-02 20:57:00 +02:00
 permalink: "/shop/"
 position: 6

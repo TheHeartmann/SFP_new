@@ -1,5 +1,6 @@
 ---
 title: Contact
+meta_description: Questions, quote inquiries, and feedback are all welcome here! Contact us via email, and we'll get back to you as soon as we can!
 date: 2016-06-02 20:57:00 +02:00
 permalink: "/contact/"
 position: 4

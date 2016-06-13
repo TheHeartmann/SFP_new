@@ -5,9 +5,8 @@ permalink: games/caveblazers/
 title_no_spaces: Caveblazers
 sc_embed_url:
 - <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862049&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
-<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862046%3Fsecret_token%3Ds-qShCW&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
-yt_embed_url: <iframe width="560" height="315" src="https://www.youtube.com/embed/CSyzFPBEo_Q?enablejsapi=1&version=3&playerapiid=ytplayer"
-  frameborder="0" allowfullscreen></iframe>
+- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862046%3Fsecret_token%3Ds-qShCW&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
+yt_id: CSyzFPBEo_Q
 shop_url: http://store.steampowered.com/app/452060
 shop_name: Steam
 available_at: Early Access is available on
@@ -18,7 +17,7 @@ developer: Rupeck Games
 developer_website: http://www.rupeck.com/caveblazers
 genre: roguelike
 music_genre: medieval
-featured_instrument: lute 
+featured_instrument: lute
 roles:
 - OST
 layout: game
@@ -27,4 +26,4 @@ layout: game
 *Caveblazers* is an action focused platformer roguelike set in a fantasy world. The game takes place in a recently discovered cave, said to hold "unimaginable power". You play as an adventurer setting out to explore the cave and find out what riches it holds, however you are not the only one.
 
 ### Loot & Legends!
-The music for *Caveblazers* features a wide variety of medieval instruments paired with a big percussion section. We wanted to convey both the classic medieval feeling as well as something more
+The music for *Caveblazers* features a wide variety of medieval instruments paired with a big percussion section. We wanted to convey both the classic medieval feeling as well as have it sound epic and adventureous.
