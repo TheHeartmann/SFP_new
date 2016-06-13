@@ -4,7 +4,7 @@ date: 2016-06-08 09:36:00 +02:00
 game: Trench Run
 author: Steamified
 publication: Steamified
-url: http://www.steamified.com/2016-indie-trench-run/
+quote_url: http://www.steamified.com/2016-indie-trench-run/
 quote_date: 2016-04-18 00:00:00 +02:00
 ---
 

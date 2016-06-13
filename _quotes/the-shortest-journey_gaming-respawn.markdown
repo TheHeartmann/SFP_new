@@ -4,7 +4,7 @@ date: 2016-06-13 09:32:00 +02:00
 game: The Shortest Journey
 author: Steve Gill
 publication: Gaming Respawn
-url: http://gamingrespawn.com/indie-game-spotlight/9620/indie-freebies-dont-spill-your-coffee/
+quote_url: http://gamingrespawn.com/indie-game-spotlight/9620/indie-freebies-dont-spill-your-coffee/
 quote_date: 2016-05-28 00:00:00 +02:00
 ---
 
