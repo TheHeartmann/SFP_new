@@ -13,9 +13,9 @@ header_image: "/uploads/checkmate_carousel.png"
 main_image: "/uploads/checkmate_main.png"
 release_date: TBD
 developer: Gavin Kwekkeboom
-developer_website:
+developer_website: 
 genre: Strategy
-music_genre:
+music_genre: 
 featured_instrument: guitar
 roles:
 - OST
