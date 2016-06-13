@@ -3,9 +3,9 @@ title: Caveblazers
 date: 2016-06-10 13:52:00 +02:00
 permalink: games/caveblazers/
 title_no_spaces: Caveblazers
-sc_embed_url:
-- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862049&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
-- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862046%3Fsecret_token%3Ds-qShCW&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
+sc_id:
+- 254862049
+- 254862046%3Fsecret_token%3Ds-qShCW
 yt_id: CSyzFPBEo_Q
 shop_url: http://store.steampowered.com/app/452060
 shop_name: Steam

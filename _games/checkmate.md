@@ -3,8 +3,7 @@ title: Checkmate
 date: 2016-06-10 13:52:00 +02:00
 permalink: games/checkmate/
 title_no_spaces: Checkmate
-sc_embed_url:
-- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/268729949%3Fsecret_token%3Ds-3Pky5&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+sc_id: 268729949%3Fsecret_token%3Ds-3Pky5
 yt_id: uSOE49Hwg4w
 shop_url: http://www.indiedb.com/games/checkmate/
 shop_name: IndieDB

@@ -3,9 +3,9 @@ title: The Shortest Journey
 date: 2016-06-11 13:52:00 +02:00
 permalink: games/the-shortest-journey/
 title_no_spaces: TheShortestJourney
-sc_embed_url:
-- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265992241&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
-- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265992236&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+sc_id:
+- 265992241
+- 265992236
 shop_url: http://gamejolt.com/games/the-shortest-journey/149463
 shop_name: Gamejolt
 available_at: You can download the game for free on

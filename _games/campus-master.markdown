@@ -1,17 +1,16 @@
 ---
-title: Trench Run
+title: Campus Master
 date: 2016-06-10 13:52:00 +02:00
-permalink: games/trench-run/
-title_no_spaces: TrenchRun
-sc_id:
-- 249867696
-yt_id: Crllx2sFex4
-shop_url: http://store.steampowered.com/app/262100/
+permalink: games/campus-master/
+title_no_spaces: CampusMaster
+sc_id: 268848135%3Fsecret_token%3Ds-LrSsm
+yt_id: OQ9o6zLgrZY
+shop_url: http://steamcommunity.com/sharedfiles/filedetails/?l=german&id=454928702
 shop_name: Steam
 available_at: Available on
 header_image: "/uploads/trench-run_carousel.png"
-main_image: "/uploads/trench-run_main2.png"
-release_date: April, 07, 2016
+main_image: "/uploads/campus-master_main.png"
+release_date: TBD
 developer: Transhuman Design
 developer_website: https://thd.vg/
 genre: Action

@@ -7,7 +7,7 @@ position: 6
 index_number: 6
 shop_url: https://soundsforpixels.bandcamp.com/
 layout: shop
-description: a collection of kind words
+description: If you appreciate what we do, this is where you can show us some extra support by checking out our little bandcamp shop and checking out with one of our OSTs! Looking for physical merch? Let us know you're interested, and we'll consider it!
 header_image: <img class="img img-responsive shop-header" src="/uploads/shop_header.png"
   alt="Shop">
 ---
