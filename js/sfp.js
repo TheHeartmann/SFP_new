@@ -111,6 +111,11 @@ $(document).ready(function () {
             , success: function () {
                 document.getElementById("contactForm").reset();
                 toggleView();
+            }, error: function () {
+                $('#mailErrorModal').modal();
+                $('.error-div').show();
+            }, warning: function () {
+                alert("err … don't know what this means … Send us an email through your usual client and we'll get in touch. Please include as much detail about this issue as you can. Thanks! —SFP")
             }
 
         });
@@ -123,6 +128,7 @@ function toggleView() {
     $("#formDiv").toggle();
     $("#footerLogo").toggle();
     $("#thankYou").toggle();
+}
 
     function clearFilter() {
         $("button.tag-button").removeClass("active");
@@ -178,11 +184,9 @@ function toggleView() {
         })
     }
 
-
     function showModal(modalName) {
         $(modalName).modal();
     }
-}
     /*function toggleVideo(){
         $(this).siblings().toggle();
 

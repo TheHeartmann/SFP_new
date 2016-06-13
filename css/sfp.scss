@@ -57,8 +57,8 @@ border-top-right-radius:0 !important;
 }
 
 #jumboIndex {
-    background-color: #a0a0a0;
-    background-image: url(/uploads/logo_border_compressed.png);
+    background-color: $green;
+    //background-image: url(/uploads/logo_border_compressed.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,9 +108,9 @@ background-color: rgba(0,0,0,.5);
 }
 
 .background {
-    background-color: rgba(255,255,255,.75);
-    border: 0.5px solid $gold;
-    border-radius: .5em;
+    //background-color: rgba(255,255,255,.75);
+    //border: 0.5px solid $gold;
+   // border-radius: .5em;
 }
 
 .header-div {
@@ -609,4 +609,21 @@ footer {
     border-top-left-radius: 1em;
     border: 1px solid rgba(0,0,0,0.1);
     border-right: .25rem solid darkgray;
+}
+
+.error-div {
+    background-color: $red;
+    border-radius: .5em;
+    width: 100%;
+    //display: none;
+}
+
+.error-p {
+    color: #fafafa;
+    & a{
+        background-color: rgba(255,255,255,.7);
+        border-radius: .5em;
+        padding: .25rem;
+        //color: $green;
+    }
 }
