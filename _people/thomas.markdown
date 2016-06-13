@@ -10,5 +10,4 @@ fav_vgm:
 - Banjo-Kazooie
 - Fire Emblem Awakening
 ---
-
-This is Thomas's bio. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+Thomas holds a first class bachelor of music from the Liverpool Institute for Performing Arts and is currently working on a degree in game programming. Experience from working with orchestras, musicals, dance shows, and all kinds of bands has helped shape his musical vision; so too has writing for picture and games, the latter of which he has found to be the most rewarding creative endeavor yet. A big fan of RPGs, strategy games and platformers, Thomas loves everything from quirky to dead serious, from EXP to action skills, and from jiggies to Poké balls.

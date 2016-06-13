@@ -18,6 +18,6 @@ send_new: Got more to say? Forgot something? Send another email!
 layout: contact
 header_image: <img class="img img-responsive header-contact" src="/uploads/contact_header.png"
   alt="Contact us">
+has_modals: false;
 ---
 
-Have a game you need music or audio for? Complaints? Praise? Bugs with the website? Get in touch! Either send us an email at [contact@soundsforpixels.com](mailto:contact@soundsforpixels.com) or get in touch using the form below, and we'll get back to you as soon as we can!

@@ -14,6 +14,7 @@ has_sidebar: true
 sidebar_icon: <i class="fa fa-tags" aria-hidden="true"></i>
 header_image: <img class="img img-responsive header-blog" src="/uploads/blog_header.png"
   alt="Blog">
+has_modals: true;
 ---
 
 This is where the blog will go.

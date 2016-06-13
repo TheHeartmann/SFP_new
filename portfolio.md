@@ -13,6 +13,7 @@ index_number: 1
 layout: portfolio
 header_image: <img class="img img-responsive header-portfolio" src="/uploads/portfolio_header.png"
   alt="Portfolio">
+has_modals: true;
 ---
 
 Some tasty gifs in a 3x3 grid.

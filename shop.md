@@ -16,5 +16,6 @@ description: If you appreciate what we do, this is where you can show us some ex
 read_more_text: Spend some gold!
 header_image: <img class="img img-responsive shop-header" src="/uploads/shop_header.png"
   alt="Shop">
+has_modals: false;
 ---
 
