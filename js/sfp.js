@@ -112,7 +112,7 @@ $(document).ready(function () {
                 document.getElementById("contactForm").reset();
                 toggleView();
             }, error: function () {
-                $('#mailErrorModal').modal();
+                showModal('#mailErrorModal');
                 $('.error-div').show();
             }, warning: function () {
                 alert("err … don't know what this means … Send us an email through your usual client and we'll get in touch. Please include as much detail about this issue as you can. Thanks! —SFP")

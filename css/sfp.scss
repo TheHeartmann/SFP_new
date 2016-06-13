@@ -7,6 +7,7 @@ $blue: #8ce7f9;
 $blue-faint: rgba(140,231,249, .9);
 $gold: #d3a628;
 $gold-faint: rgba(211,166,40, 0.8);
+$gold-fainter: rgba(211,166,40, 0.4);
 $red: #9d636e;
 $red-faint: rgba(157,99,110, .8);
 $orange:  #FF5500;
@@ -16,6 +17,7 @@ $green-faint:rgba(78,132,123,.8);
 $dblue:#4D6D90;
 $dblue-faint:rgba(77,109,144,.8);
 $yellow: #a79374;
+$gray: #b4b1ac;
 
 
 
@@ -58,12 +60,15 @@ border-top-right-radius:0 !important;
 
 #jumboIndex {
     background-color: $green;
-    //background-image: url(/uploads/logo_border_compressed.png);
-    background-size: contain;
+    background-image: url(/uploads/header_noText.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0;
     width: 100%;
+    border-bottom: 3px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
 
 }
 
@@ -108,9 +113,10 @@ background-color: rgba(0,0,0,.5);
 }
 
 .background {
-    //background-color: rgba(255,255,255,.75);
+    background-color: rgba(255,255,255,.95);
     //border: 0.5px solid $gold;
-   // border-radius: .5em;
+    //border-radius: .5em;
+    height: 200%;
 }
 
 .header-div {
@@ -528,8 +534,8 @@ footer {
 }
 
 .index-info {
-    padding-left: .2rem;
-    padding-right: .2rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
 }
 
 .btn-taglist {
@@ -574,7 +580,7 @@ footer {
 }
 
 .shop-header {
-    background-color: $gold;
+    background-color: $gray;
 }
 
 .about-header {
@@ -626,4 +632,47 @@ footer {
         padding: .25rem;
         //color: $green;
     }
+}
+
+#carouselIndex {
+    border-bottom: 3px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.page-box-link {
+    color: #333;
+    text-decoration: none;
+    & img{
+        border: 1px solid black;
+    }
+    &:hover, &:focus{
+        text-decoration: none;
+        color: $yellow;
+    }
+    & a {
+        text-decoration: none;
+    }
+    &:hover div.page-box-link, &:focus div.page-box-link {
+        background-color: $gold-fainter;
+    }
+    &:hover img, &:focus img{
+        background-color: $gold-faint;
+    }
+}
+
+.page-box-text {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-radius: .5em;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    //border: 1px solid black;
+    border-top: 0;
+}
+
+.link-no-style:hover{
+    text-decoration: none;
 }

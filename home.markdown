@@ -11,6 +11,6 @@ sidebar_icon: <i class="fa fa-twitter" aria-hidden="true"></i>
 has_modals: true;
 ---
 
-# **Make *your* game sound *great*.**
+# Make your game come alive.
 
-### Last built at: {{ site.time }}
+Sounds for Pixels create custom soundtracks and SFX to suit your game and your needs. Get in touch for a friendly chat or a quote, or browse the website to hear some of our work.

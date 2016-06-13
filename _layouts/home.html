@@ -8,7 +8,7 @@ layout: default
 
         <div class="header-container m-x-1 m-b-1">
            <div class="jumbotron hanging-item m-b-0 m-x-0 p-x-0" id="jumboIndex">
-            <div class="background text-center">
+            <div class="background m-a-0 p-a-0 text-center">
                 <h1 class="text-uppercase font-weight-bold">{{title}}</h1>
                 <p>{{content}}</p>
             </div>
@@ -56,12 +56,13 @@ layout: default
  <div class="row m-x-1 p-x-0">
               <div class="container-fluid">
                {% for page in pages %} {% if page.position > 0 %}
-                <div class="col-md-4 col-sm-6 index-info">
-                    <a href="{{page.url}}">{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}</a>
-               <!-- <h2>{{ page.title }}</h2>-->
-                <p>{% if page.description %} {{page.description | markdownify }} {% else %} {{site.lorem_ipsum}} {% endif %}{% if page.title == 'Blog' %} Latest blog post:{% for post in site.posts | limit:1 %} <strong>{{post.title}}</strong>{% endfor %}<br>{% endif %}<br>
-                <a class="btn btn-default btn-block" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a> </p>
-                </div>
+                <div class="col-md-4 col-sm-6 index-info m-b-1 p-b-0">
+                   <a href="{{page.url}}" class="page-box-link"><div>
+                    {% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}
+               <!-- <h2>{{ page.title }}</h2>--><div class="page-box-text p-t-1">
+                <p class="m-b-0 p-b-0 link-no-style">{% if page.description %} {{page.description | markdownify }} {% else %} {{site.lorem_ipsum}} {% endif %}{% if page.title == 'Blog' %} Latest blog post:{% for post in site.posts | limit:1 %} <strong>{{post.title}}</strong>{% endfor %}<br>{% endif %}<br>
+                 </p>
+                       </div> </div></a></div>
                 {% cycle '', '', '<div class="clearfix hidden-sm-down"></div>' %}
                 {% endif %}{% endfor %}
      </div>
@@ -72,7 +73,7 @@ layout: default
 
     <!--Twitter feed-->
     <div class="col-xs-6 col-sm-3 sidebar-offcanvas m-r-0 p-r-0" id="sidebar">
-        <a class="twitter-timeline" href="https://twitter.com/soundsforpixels" data-widget-id="738308741876047873" height="1200" data-chrome=" noscrollbar noheader" data-theme="dark" data-border-color="#{{site.blue}}" data-link-color="#{{site.gold}}">Tweets by @soundsforpixels</a>
+        <a class="twitter-timeline" href="https://twitter.com/soundsforpixels" data-widget-id="738308741876047873" height="1000" data-chrome=" noscrollbar noheader" data-theme="dark" data-border-color="#{{site.blue}}" data-link-color="#{{site.gold}}">Tweets by @soundsforpixels</a>
         <!--removed: data-tweet-limit="{{site.twitter_feed_limit}}"-->
         <script>
             ! function (d, s, id) {
