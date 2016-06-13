@@ -4,27 +4,27 @@ date: 2016-06-10 13:52:00 +02:00
 permalink: games/caveblazers/
 title_no_spaces: Caveblazers
 sc_embed_url:
-- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/268729949%3Fsecret_token%3Ds-3Pky5&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+- <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862049&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254862046%3Fsecret_token%3Ds-qShCW&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
 yt_embed_url: <iframe width="560" height="315" src="https://www.youtube.com/embed/CSyzFPBEo_Q?enablejsapi=1&version=3&playerapiid=ytplayer"
   frameborder="0" allowfullscreen></iframe>
-shop_url: http://www.indiedb.com/games/checkmate/
-shop_name: IndieDB
-available_at: This game is still in development, but scheduled to go on Steam Greenlight
-  before long. In the meantime, check out the trailer below or head on over to
+shop_url: http://store.steampowered.com/app/452060
+shop_name: Steam
+available_at: Early Access is available on
 header_image: "/uploads/checkmate_carousel.png"
 main_image: "/uploads/caveblazers_main.png"
-release_date: TBD
+release_date: April, 01, 2016
 developer: Rupeck Games
 developer_website: http://www.rupeck.com/caveblazers
 genre: roguelike
 music_genre: medieval
-featured_instrument: 
+featured_instrument: lute 
 roles:
 - OST
 layout: game
 ---
 
-*Checkmate* is a cross-over between *Civilization V* and chess. Collect ore, build and upgrade your city, train your pawns and beat the enemy! Play chess like you've never played it before, with new pieces, new rules and all in real-time... Play with friends online, or go solo against the computer to train your skills, and, due to the randomization, everything feels and plays differently every single time!
+*Caveblazers* is an action focused platformer roguelike set in a fantasy world. The game takes place in a recently discovered cave, said to hold "unimaginable power". You play as an adventurer setting out to explore the cave and find out what riches it holds, however you are not the only one.
 
-### One, two, three, four!
-When writing the music for this game, we though of chess as a militaristic strategy game, and ended up with a strong focus on marching snares and rhythms, which we combined with a modern, mildly western-influenced guitar/bass/kit line-up.
+### Loot & Legends!
+The music for *Caveblazers* features a wide variety of medieval instruments paired with a big percussion section. We wanted to convey both the classic medieval feeling as well as something more
