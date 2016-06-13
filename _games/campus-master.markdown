@@ -7,22 +7,22 @@ sc_id: 268848135%3Fsecret_token%3Ds-LrSsm
 yt_id: OQ9o6zLgrZY
 shop_url: http://steamcommunity.com/sharedfiles/filedetails/?l=german&id=454928702
 shop_name: Steam
-available_at: Available on
-header_image: "/uploads/trench-run_carousel.png"
-main_image: "/uploads/campus-master_main.png"
+available_at: This game is currently being devloped, with more info on
+header_image: "/uploads/campus-master_carousel.png"
+main_image: "/uploads/campus-master_main3.png"
 release_date: TBD
-developer: Transhuman Design
-developer_website: https://thd.vg/
-genre: Action
-music_genre: gypsy jazz
-featured_instrument: guitar
+developer: Patrick Schäfer
+developer_website: http://campus-master.com/
+genre: Simulation
+music_genre: electronic
+featured_instrument: synth
 roles:
 - OST
 layout: game
 ---
 
-*Trench Run* is a mayhem-filled, laugh a minute casual multiplayer action game brought to you by the makers of *King Arthur's Gold* and *Soldat*. Blow your enemies to bits in muddy trenches, then sip wine with them at the bar in the first multiplayer shooter with no death.
+*Campus Master* is a school building simulator, where you build your own small basic school - stone by stone and room by room - to be able to educate your students. Get them to pass grades by providing them a good learning environment, a perfectly designed school infrastructure, well trained staff, and the equipment needed to satisfy your students needs.
 
 
-### Silly multiplayer fun.
-With *Trench Run* we wanted to go for a contrast between music and gameplay. While the game is fast and loaded with action the music is made up of jazzy acoustic guitars strumming along in a happy go lucky swing feel.
+### Nostalgia.
+For *Campus Master* we wanted to have a bit of an nostalgic feel to the music. We purposefully used older sounding synths to create a bit of an hommage to classic soundtracks we used to listen to while playing games in our younger years. Synths, E-Pianos and string ensembles come together for a positive, but also bittersweet backdrop for building your own dream schools.

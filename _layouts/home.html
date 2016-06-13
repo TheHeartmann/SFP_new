@@ -59,7 +59,8 @@ layout: default
                 <div class="col-md-4 col-sm-6 index-info">
                     <a href="{{page.url}}">{% if page.header_image %} {{page.header_image}} {% else %} {{site.header_image}} {% endif %}</a>
                <!-- <h2>{{ page.title }}</h2>-->
-                <p>{% if page.description %} {{page.description}} {% else %} {{site.lorem_ipsum}} {% endif %}<br><a class="btn btn-default" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a> </p>
+                <p>{% if page.description %} {{page.description | markdownify }} {% else %} {{site.lorem_ipsum}} {% endif %}{% if page.title == 'Blog' %} Latest blog post:{% for post in site.posts | limit:1 %} <strong>{{post.title}}</strong>{% endfor %}<br>{% endif %}<br>
+                <a class="btn btn-default btn-block" href="{{page.url}}" role="button">{% if page.read_more_text %}{{page.read_more_text}}{% else %}View details »{% endif %}</a> </p>
                 </div>
                 {% cycle '', '', '<div class="clearfix hidden-sm-down"></div>' %}
                 {% endif %}{% endfor %}

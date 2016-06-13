@@ -10,7 +10,7 @@ yt_id: CSyzFPBEo_Q
 shop_url: http://store.steampowered.com/app/452060
 shop_name: Steam
 available_at: Early Access is available on
-header_image: "/uploads/checkmate_carousel.png"
+header_image: "/uploads/caveblazers_carousel.png"
 main_image: "/uploads/caveblazers_main.png"
 release_date: April, 01, 2016
 developer: Rupeck Games

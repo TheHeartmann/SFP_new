@@ -1,5 +1,8 @@
 ---
 title: Blog
+description: |
+    This is where we'll post news and put the spotlight on specific tracks every so often. Information regarding events we may attend, projects we take on, changes to the website etc, can all be found here.
+read_more_text: Do some reading!
 meta_description: Wonder how we approach composing video game music? Find news and detailed discussion of tracks right here, at the Sounds for Pixels blog!
 date: 2016-06-02 20:21:00 +02:00
 permalink: "/blog/"
@@ -8,7 +11,6 @@ index_number: 2
 layout: blog
 has_sidebar: true
 sidebar_icon: <i class="fa fa-tags" aria-hidden="true"></i>
-description: a collection of kind words
 header_image: <img class="img img-responsive header-blog" src="/uploads/blog_header.png"
   alt="Blog">
 ---

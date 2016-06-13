@@ -7,7 +7,8 @@ position: 6
 index_number: 6
 shop_url: https://soundsforpixels.bandcamp.com/
 layout: shop
-description: If you appreciate what we do, this is where you can show us some extra support by checking out our little bandcamp shop and checking out with one of our OSTs! Looking for physical merch? Let us know you're interested, and we'll consider it!
+description: If you appreciate what we do, this is where you can show us some extra support by checking out our little bandcamp shop and checking out with one of our OSTs! Want an SFP t-shirt or baseball cap? Send us an email and we'll arrange a little something-something.
+read_more_text: Spend some gold!
 header_image: <img class="img img-responsive shop-header" src="/uploads/shop_header.png"
   alt="Shop">
 ---
