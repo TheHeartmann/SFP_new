@@ -1,6 +1,6 @@
 ---
 layout: page
-meta_description: 
+meta_description:
 ---
 
 <div class="m-x-1">
@@ -8,7 +8,7 @@ meta_description:
 <blockquote class="blockquote m-b-3 {% cycle '', 'blockquote-reverse' %}">
   <p class="m-b-0">{{quote}}</p>
   {% assign gameArray = site.games | where:"title", quote.game %}{% assign game = gameArray.first %}
-  <footer class="blockquote-footer">{{quote.author}} about <a href="#"  onclick="showModal('#{{game.title_no_spaces}}Modal')">{{game.title}}</a> | <a href="{{quote.quote_url}}"><cite title="Source Title">{{quote.publication}}</cite></a></footer>
+  <footer class="blockquote-footer">{{quote.author}} about <a href="#"  onclick="showModal('#{{game.title_no_spaces}}Modal')">{{game.title}}</a> | <a href="{{quote.url}}"><cite title="Source Title">{{quote.publication}}</cite></a></footer>
 </blockquote>
 {% endfor %}
 </div>
