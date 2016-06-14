@@ -5,16 +5,16 @@ permalink: games/checkmate/
 title_no_spaces: Checkmate
 sc_id: 268729949%3Fsecret_token%3Ds-3Pky5
 yt_id: uSOE49Hwg4w
-shop_url:
-shop_name:
-available_at:
+shop_url: 
+shop_name: 
+available_at: 
 header_image: "/uploads/checkmate_carousel.png"
 main_image: "/uploads/checkmate_main.png"
 release_date: TBD
 developer: Gavin Kwekkeboom
-developer_website:
+developer_website: 
 genre: Strategy
-music_genre:
+music_genre: 
 featured_instrument: guitar
 roles:
 - OST
