@@ -18,6 +18,7 @@ $dblue:#4D6D90;
 $dblue-faint:rgba(77,109,144,.8);
 $yellow: #a79374;
 $gray: #b4b1ac;
+$gramo-gray: #abbcc1;
 
 
 
@@ -688,4 +689,32 @@ footer {
     border-bottom: 3px solid black;
     border-right: 2px solid black;
     border-left: 2px solid black;
+}
+
+.index-btn {
+    border-bottom: 3px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 0;
+    background-color: $gold;
+        color: black;
+    &:focus, &:hover{
+        background-color: $gold-faint;
+        color: black;
+        border-color: black;
+    }
+    &:active{
+        background-color: $blue-faint;
+        color: white;
+        border-color: black;
+    }
+}
+
+.gif-player {
+    background-image: url(/uploads/grammo-player.gif);
+    background-color: $gramo-gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    height: 100px;
 }
