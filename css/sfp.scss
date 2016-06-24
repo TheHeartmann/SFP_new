@@ -194,6 +194,7 @@ background-color: rgba(0,0,0,.5);
 .portfolio-box:focus {
 outline: none;
 }
+
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
@@ -202,6 +203,7 @@ outline: none;
     font-size: 22px;
   }
 }
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
     }
@@ -384,7 +386,7 @@ outline: none;
 
 .navbar-brand {
     margin-bottom: -20px;
-    padding-left: 14px !important;
+    margin-left: 14px;
 }
 
 body {
@@ -481,9 +483,10 @@ tbody {
 }
 
 body {
-     //background-image: url(/assets/img/logo/logo_border_noText.png);
-    //background-size: cover;
+    background-image: url(/uploads/gold_background_goldOnly.png);
+    background-size: cover;
     background-color: $blue-faint;
+    background-attachment: fixed;
 }
 
 .sidebar-offcanvas {
@@ -675,4 +678,8 @@ footer {
 
 .link-no-style:hover{
     text-decoration: none;
+}
+
+.nav-logo-small {
+   margin-left: 25px;
 }
