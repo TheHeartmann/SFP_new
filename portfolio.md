@@ -3,8 +3,9 @@ title: Portfolio
 date: 2016-06-02 20:57:00 +02:00
 permalink: "/portfolio/"
 position: 1
-description: Hear some of our past work and see what projects we have been involved in! Mouseover an image
-  to see the game title and what we did, and click for more info and music.
+description: Hear some of our past work and see what projects we have been involved
+  in! Mouseover an image to see the game title and what we did, and click for more
+  info and music.
 read_more_text: Show me some games!
 meta_description: Need music for your game? Wonder what games we have written for,
   and what they sound like? Check out our portfolio, complete with tracks and videos!
