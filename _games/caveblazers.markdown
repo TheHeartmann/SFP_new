@@ -6,6 +6,7 @@ title_no_spaces: Caveblazers
 sc_id:
 - 254862049
 - 254862046%3Fsecret_token%3Ds-qShCW
+- 272147778
 yt_id: CSyzFPBEo_Q
 shop_url: http://store.steampowered.com/app/452060
 shop_name: Steam
