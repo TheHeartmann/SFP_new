@@ -10,7 +10,8 @@ genre: Floatformer
 music_genre: Chiptune
 roles: OST
 release_date: TBD
-available_at: Aftertile was conceived during LD#35 in 72 hours. The JAM version is available
+available_at: Aftertile was conceived during LD#35 in 72 hours. The JAM version is
+  available
 shop_url: http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=87699
 shop_name: here
 ---
