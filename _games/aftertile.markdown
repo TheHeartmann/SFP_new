@@ -21,7 +21,7 @@ When life is over, ghosts gather at the mystical Ever-Floating Comet to find a p
 ### A soft world
 Depicting a tranquil place of eternal rest, the world of *Aftertile* is one of calm, serenity, and softness. As such, the music is being composed with this in mind, and while it is chiptune music at its core, the addition of gentle reverbs, pianos, and harps softens it up and creates a much less jagged version of the genre.
 
-Soundtrack duties for this game is split between us and Eduadro Zolhof.
+Soundtrack duties for this game is split between us and [Eduardo Zolhof](https://soundcloud.com/eduardo-zolhof "Eduardo's SoundCloud").
 
 *This game is still in active development, and does not yet have a release date. We will update this section with relevant information (and music) when the time comes.*
 
