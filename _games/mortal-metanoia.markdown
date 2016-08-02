@@ -9,6 +9,7 @@ shop_name: this link
 available_at: The game can be downloaded from
 release_date: 2016-07-31 00:00:00 +02:00
 developer: Murzy and Mattie
+developer_website: https://twitter.com/mattiervst
 genre: Sidescrolling shootformer
 music_genre: Electronic
 featured_instrument: Synth
