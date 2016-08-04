@@ -4,9 +4,9 @@ date: 2016-08-02 17:04:00 +02:00
 main_image: "/uploads/mortal-metanoia_main.png"
 header_image: "/uploads/mortal-metanoia_carousel.png"
 title_no_spaces: mortalmetanoia
-shop_url: https://t.co/Mj1A5FOPMi
-shop_name: here
-available_at: The game can be played in-browser
+shop_url: https://t.co/4hzjZctQ8r
+shop_name: this link
+available_at: The game can be downloaded from
 release_date: 2016-07-31 00:00:00 +02:00
 developer: Murzy and Mattie
 developer_website: https://twitter.com/mattiervst
