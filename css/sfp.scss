@@ -91,7 +91,7 @@ background-color: rgba(0,0,0,.5);
     overflow: hidden;
         border-bottom-left-radius: .2em;
     border-bottom-right-radius: .2em;
-    background-color: $sc-gray;
+    background-color: $blue2;
 }
 
 .background-image {
@@ -425,7 +425,7 @@ background: none;
 display: table;
     background-color: $silver;
 list-style: none;
-    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
     overflow: hidden;
 }
 #collapsedNavbar ul li {
@@ -439,10 +439,11 @@ display: block;
 
 #collapsedNavbar {
           //width: 100%;
-    width: 9.4em;
+    width: 6em;
     //border: 2px solid red;
    // background-color: rgba(255,255,255,0)
     border: none;
+    top: 49px;
 }
 
 
