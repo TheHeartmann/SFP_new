@@ -6,21 +6,21 @@
 <body>
 <!--<body>-->
 {% assign pages = site.pages | sort: "index_number" %}
-    {% include navbar.html %}
-    <div class="container-fluid {% if page.title == 'Home' %} p-x-0 {% endif %}" style="background-color: rgba(255,255,255, .99);">
+    <div class="container-fluid p-x-0">
+     {% include navbar.html %}
+     <div class="p-x-1">
 
 
                 {{ content }}
 
         {% include footer.html %}
+        </div>
     </div>
 
 
 
 </body>
-{% for game in site.games %}
-{{game}}
-{% endfor %}
+
 
 {% include js.html %}
 

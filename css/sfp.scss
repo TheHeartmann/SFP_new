@@ -8,6 +8,9 @@ $blue-faint: rgba(140,231,249, .9);
 $gold: #d3a628;
 $gold-faint: rgba(211,166,40, 0.8);
 $gold-fainter: rgba(211,166,40, 0.4);
+$yellow: #fbc81e;
+$brown2: #B58759;
+$blue2: #4AA3B8;
 $red: #9d636e;
 $red-faint: rgba(157,99,110, .8);
 $orange:  #FF5500;
@@ -16,17 +19,18 @@ $green: #4e847b;
 $green-faint:rgba(78,132,123,.8);
 $dblue:#4D6D90;
 $dblue-faint:rgba(77,109,144,.8);
-$yellow: #a79374;
+$brown: #a79374;
 $gray: #b4b1ac;
 $gramo-gray: #abbcc1;
-
+$silver: #dddddd;
+$sc-gray: #F5F5F5;
 
 
 .navbar {
-  background-color: $gold;
+  background-color: $silver;
     border-bottom: none;
     max-height: 50px;
-    border-bottom: 2px solid black;
+    //border-bottom: 2px solid black;
 
   img {
     height: 2em;
@@ -37,10 +41,6 @@ $gramo-gray: #abbcc1;
 
 .navbar-fixed-top {
     padding-bottom: 0;
-}
-
-body {
-    padding-top: 50px;
 }
 
 button {
@@ -91,12 +91,7 @@ background-color: rgba(0,0,0,.5);
     overflow: hidden;
         border-bottom-left-radius: .2em;
     border-bottom-right-radius: .2em;
-}
-
-.carousel-img {
-    &:hover {
-        //do something and make it work similarly to old portfolio
-    }
+    background-color: $sc-gray;
 }
 
 .background-image {
@@ -173,7 +168,7 @@ background-color: rgba(0,0,0,.5);
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "sintony", "open droid", 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -237,8 +232,9 @@ outline: none;
 .navbar-light .navbar-nav .nav-link.active:hover {
   color:rgba(0, 0, 0, .8);
     background-color: rgba(255, 255, 255, 0.2);
-    //border-radius: .5em;
+    border-radius:0;
     font-weight: bold;
+    text-decoration: overline;
     background-color: transparent;
 }
 
@@ -390,10 +386,6 @@ outline: none;
     margin-left: 14px;
 }
 
-body {
-
-}
-
 .btn-no-style {
     padding: 0;
 border: none;
@@ -431,7 +423,7 @@ background: none;
 //Nav spacing
 #collapsedNavbar ul {
 display: table;
-    background-color: $gold;
+    background-color: $silver;
 list-style: none;
     border-bottom-left-radius: .5em;
     overflow: hidden;
@@ -484,9 +476,9 @@ tbody {
 }
 
 body {
-    background-image: url(/uploads/gold_background_goldOnly.png);
+    //background-image: url(/uploads/gold_background_goldOnly.png);
     background-size: cover;
-    background-color: $blue-faint;
+    background-color: #f0f0f0;
     background-attachment: fixed;
 }
 
@@ -722,3 +714,20 @@ footer {
 .portfolio-box-button {
     border: .1rem solid $blue;
 }
+
+.navlist-full {
+     width:100%;
+}
+
+.nav-link{
+ font-family: "Sintony", "Droid Sans", "Helvetica", sans-serif;
+    font-weight: bold;
+}
+
+
+
+.icon-div {
+    font-size:3em;
+}
+
+
