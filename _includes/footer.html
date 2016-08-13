@@ -1,9 +1,9 @@
 <footer>
 
-    <div class="wrapper">
+    <div class="wrapper m-b-1">
         <div class="footer-col-wrapper p-x-1">
             <div class="row" style="padding-top: .5em">
-                <div class="col-md-4 footer-col footer-col-2 text-xs-center text-md-left">
+                <div class="col-sm-6 footer-col footer-col-2 text-xs-center text-sm-left">
                     © <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y" }}</time> {{ site.title }}
                     <br>
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -11,20 +11,16 @@
 
                 </div>
 
-                <div class="col-md-4 footer-col footer-col-1 text-xs-center extra-margin">
+                <div class="col-sm-6 footer-col footer-col-1 text-xs-center text-sm-right extra-margin">
                     {% if site.twitter_username %}
                     <i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/{{site.twitter_username}}">{{site.twitter_username}}</a> {% endif %} {% if site.instagram_username %}
                     <br>
                     <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/{{site.instagram_username}}">{{site.instagram_username}}</a> {% endif %}
                 </div>
 
-                <div class="col-md-4 footer-col text-xs-center text-md-right footer-col-3">
+               <!-- <div class="col-md-4 footer-col text-xs-center text-md-right footer-col-3">
                     {{site.footer_text}}
-                </div>
-                   <div class="col-xs-12 footer-col img-restrain" id="footerLogo">
-                    {{site.logo_image}}
-                </div>
-            </div>
+            </div>-->
 
         </div>
     </div>

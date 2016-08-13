@@ -1,52 +1,38 @@
-<nav class="navbar navbar-full navbar-light p-a-0 m-a-0">
-    <!--<a class="navbar-brand p-r-0 p-x-0 hidden-xs-down" href="{{site.url}}" >{{site.logo_text_image}}</a><a class="navbar-brand nav-logo-small p-r-0 p-x-0 hidden-sm-up" href="{{site.url}}" >{{site.logo_image}}</a>
--->
-<!--      <button type="button" data-toggle="modal" data-target="#SCModal" class="btn-warning btn pull-xs-right sc-button nav-button p-x-1 m-x-0"><i class="fa fa-play" aria-hidden="true"></i></button>-->
-{% if page.has_sidebar %}
-       <button type="button" class="btn btn-xs hidden-lg-up pull-xs-right nav-button" data-toggle="offcanvas">{{page.sidebar_icon}}</button>
-       {% endif %}
+<div class="row m-t-1 m-x-1">
 
-    <button class='navbar-toggler hidden-md-up pull-xs-left' data-target='#collapsedNavbar' data-toggle='collapse' type='button' style="font-size: 2em">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </button>
 
+   <div class="col-xs-3 col-sm-1 text-center icon-div"><a href="https://instagram.com/{{site.instagram_username}}"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+    <div class="col-xs-3 col-sm-1 text-center icon-div"><a href="https://twitter.com/{{site.twitter_username}}"><i class="fa fa-twitter" aria-hidden="true"></i></a> </div>
+    <div class="col-xs-3 col-sm-1 text-center icon-div">
+        <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+<div class="col-xs-3 col-sm-4 col-sm-offset-1"> <a href="{{site.url}}">{{site.logo_image}}</a>
+
+</div>
+
+            </div>
+
+   <nav class="navbar navbar-full navbar-light p-a-0 m-a-0">
 
    {% assign currentTitle = page.title %}
 
-   <!-- <div class="collapse navbar-toggleable-md hidden-lg-up pull-xs-left m-r-0 p-r-0" id="collapsedNavbar">
-        <ul class="nav navbar-nav m-t-0 p-t-0 m-r-0 p-r-0">
-            {% for page in pages %}{% if page.title %}
-            <li class="nav-item m-x-0 p-x-0 pull-xs-left{% if page.title == currentTitle %} active{% endif %}">
-                <a class="nav-link {% if page.title == currentTitle %} active{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title  | upcase }}</a>
-            </li>
-{% endif %}
-            {% endfor %}
-        </ul>
-    </div>
--->
-    <!--Two navbars to make them act the way we want both when collapsed and when not.-->
-
-    <div class="navbar-toggleable-sm hidden-sm-down pull-lg-none m-x-1 p-x-1 navlist-full">
-        <ul class="nav navbar-nav nav-pills m-x-auto">
+    <div class="pull-lg-none m-x-0 p-x-0 navlist-full">
+        <ul class="nav navbar-nav hidden-sm-down">
              {% for page in pages %} {% if page.title %}
-            <li role="presentation" class="nav-item pull-xs-none pull-md-left {% if page.title == currentTitle %} active {% endif %}">
+            <li role="presentation" class="nav-item {% if page.title == currentTitle %} active {% endif %}">
                 <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | upcase }}</a>
             </li>
             {% endif %} {% endfor %}
         </ul>
-    </div>
- <!--Sidebar-->
-    <div class="collapse navbar-toggleable-sm col-xs-6 col-sm-3 sidebar-offcanvas m-r-0 p-r-0 hidden-md-up" id="collapsedNavbar">
-        <ul class="nav navbar-nav m-t-0 p-t-0 m-r-0 p-r-0">
-            {% for page in pages %}{% if page.title %}
-            <li class="nav-item m-x-0 p-x-0 pull-xs-left{% if page.title == currentTitle %} active{% endif %}">
-                <a class="nav-link {% if page.title == currentTitle %} active{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title  | upcase }}</a>
+
+            <ul class="nav navbar-nav hidden-md-up" style="table-layout: auto;">
+             {% for page in pages %} {% if page.title %}
+            <li role="presentation" class="nav-item {% if page.title == currentTitle %} active {% endif %}">
+                <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | upcase }}</a>
             </li>
-{% endif %}
-            {% endfor %}
+            {% endif %} {% endfor %}
         </ul>
-    </div>
-    <!--/.sidebar-offcanvas-->
+       </div>
+
 </nav>
 
 

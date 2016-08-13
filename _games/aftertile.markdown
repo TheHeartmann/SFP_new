@@ -1,5 +1,6 @@
 ---
 title: Aftertile
+permalink: games/aftertile/
 date: 2016-07-18 13:54:00 +02:00
 main_image: "/uploads/aftertile_main.png"
 header_image: "/uploads/aftertile_carousel.png"

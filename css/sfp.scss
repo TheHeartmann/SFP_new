@@ -27,14 +27,15 @@ $sc-gray: #F5F5F5;
 
 
 .navbar {
-  background-color: $silver;
+  background-color: $sc-gray;
     border-bottom: none;
-    max-height: 50px;
-    //border-bottom: 2px solid black;
+    min-height: 10px !important;
+     //border: 1px solid black;
+    //border-bottom: 1px solid black;
 
-  img {
+  /*img {
     height: 2em;
-    }
+    }*/
 }
 
 
@@ -91,7 +92,7 @@ background-color: rgba(0,0,0,.5);
     overflow: hidden;
         border-bottom-left-radius: .2em;
     border-bottom-right-radius: .2em;
-    background-color: $blue2;
+    background-color: $sc-gray;
 }
 
 .background-image {
@@ -427,6 +428,8 @@ display: table;
 list-style: none;
     border-bottom-right-radius: .5em;
     overflow: hidden;
+    border: 1px solid black;
+    border-top: none;
 }
 #collapsedNavbar ul li {
 display: table-cell;
@@ -439,11 +442,11 @@ display: block;
 
 #collapsedNavbar {
           //width: 100%;
-    width: 6em;
+    width: 8em;
     //border: 2px solid red;
    // background-color: rgba(255,255,255,0)
     border: none;
-    top: 49px;
+    top: 35px;
 }
 
 
@@ -479,7 +482,7 @@ tbody {
 body {
     //background-image: url(/uploads/gold_background_goldOnly.png);
     background-size: cover;
-    background-color: #f0f0f0;
+    background-color: $sc-gray;
     background-attachment: fixed;
 }
 
@@ -728,7 +731,43 @@ footer {
 
 
 .icon-div {
-    font-size:3em;
+    font-size:2em;
 }
 
 
+
+.navbar-nav, .nav-pills {
+    display: table;
+    table-layout:fixed;
+width: 100%;
+list-style: none;
+    overflow:hidden;
+    li {
+display: table-cell;
+text-align: center;
+/*        &:first-child{
+            float:left;
+        }
+        &:last-child{
+            float:right;
+        }*/
+        a {
+display: block;
+
+}
+    }
+    .nav-item{
+        float:none;
+    }
+    * {
+        padding-bottom: none;
+        padding: none;
+        margin: none;
+    }
+}
+
+
+
+.page-header-light {
+    border-bottom: 2px solid black;
+}
