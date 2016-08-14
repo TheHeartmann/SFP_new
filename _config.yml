@@ -11,13 +11,13 @@ collections:
     output: false
   posts:
     title: Posts
-    output: true
+    output: false
   quotes:
     title: Quotes
-    output: true
+    output: false
   uploads:
     title: Uploads
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''
