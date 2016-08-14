@@ -3,7 +3,7 @@ title: Mortal Metanoia
 permalink: games/mortal-metanoia/
 date: 2016-08-02 17:04:00 +02:00
 main_image: "/uploads/mortal-metanoia_main.png"
-header_image: "/uploads/mortal-metanoia_header-wide.png"
+header_image: "/uploads/mortal-metanoia_carousel.png"
 title_no_spaces: mortalmetanoia
 shop_url: https://t.co/4hzjZctQ8r
 shop_name: this link

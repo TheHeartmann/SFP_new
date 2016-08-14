@@ -40,12 +40,14 @@ layout: default
 <div class="content">
 <div class="m-x-1">
 
+<div id="portfolio">
+
 <h2 class="m-t-2 m-l-1">Games we've worked on</h2>
 <div class="row">
     {% assign games_rev = site.games | reverse %}
 
-                {% for game in games_rev | limit: 4 %}
-                <div class="col-sm-12 m-a-1 p-a-0">
+                {% for game in games_rev %}
+                <div class="col-sm-12 m-x-0 p-a-0 portfolio-header">
                     <button type="button" data-toggle="modal" data-target="" onclick="showModal('#{{game.title_no_spaces}}Modal')" class="btn-no-style portfolio-box portfolio-box-button">
                         <img src="{{game.header_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
@@ -65,39 +67,45 @@ layout: default
                         </div>
                     </button>
                 </div>
-
-
-                {% endfor %}
-
-                 {% for game in games_rev | offset: 4 %}
-                <div class="col-sm-2 m-a-1 p-a-0">
-                    <button type="button" data-toggle="modal" data-target="" onclick="showModal('#{{game.title_no_spaces}}Modal')" class="btn-no-style portfolio-box portfolio-box-button">
-                        <img src="{{game.main_image}}" class="img img-responsive" alt="{{game.title}}">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded text-uppercase font-weight-bold">
-                                 {% for role in game.roles %}
-                                   {% unless forloop.first %}
-                                    |
-                                    {% endunless %}
-                                    {{role}}
-                                    {% endfor %}
-                                </div>
-                                <div class="project-name">
-                                    {{game.title}}
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-
-
                 {% endfor %}
 
 </div>
+</div>
+
  <!--end portfolio-->
 
  <!--about-->
+ <div id="about">
+   <h1 class="display-1 text-center">{{site.title}}</h1>
+<div class="m-b-3">{{content}}</div>
+
+
+{% for person in site.people limit:2 %}
+<div class="row m-t-0 p-b-2 m-x-1" >
+<div class=" col-lg-3 p-a-0">
+            <a href="mailto:{{person.mail}}" class="portfolio-box about-pic">
+                <img src="{{person.profile_image}}" class="img img-responsive" alt="{{person.title}}">
+                <div class="portfolio-box-caption about-box">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded about-overlay">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+           <div class=" col-lg-8 p-l-2">
+            <h3 class="display-4">{{person.title}}</h3>
+            <p class="lead m-b-0"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{person.mail}}">{{person.mail}}</a></p>
+            <p>{{person.content}}</p>
+            <p>Favorite game soundtracks: {% for OST in person.fav_vgm %} <i>{{OST}}</i>{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}</p>
+        </div>
+        </div>
+{% endfor %}
+
+ </div>
+
 <!--end about-->
 
 {% include footer.html %}

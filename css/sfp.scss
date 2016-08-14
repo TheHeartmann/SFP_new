@@ -296,6 +296,7 @@ outline: none;
 
 .about-pic {
     border: 3px solid black;
+     max-width: 500px;
 }
 
     .portfolio-box .about-box-caption {
@@ -506,6 +507,7 @@ body {
     float: right;
     overflow-x: hidden;
     overflow: visible;
+    background-color: white;
 }
 
 .tag-list {
@@ -1120,3 +1122,10 @@ display: block;
 }
 
 /*end NOEL BERRY SPLITSCREEN*/
+
+.portfolio-header {
+    overflow:hidden;
+    margin-bottom: .2em;
+}
+
+

@@ -4,7 +4,7 @@ timezone: Europe/Berlin
 collections:
   games:
     title: Games
-    output: true
+    output: false
   people:
     title: People
     output: false
