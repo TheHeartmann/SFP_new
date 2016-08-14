@@ -4,25 +4,31 @@ layout: default
 
 <!--banner-->
 <div class="banner m-x-0">
+<div class="row logo-header m-t-1">
 
-{% include navbar.html %}
 
-<div class="row m-t-1">
-
-    <div class="col-md-12">
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QQICEnN_oP8" allowfullscreen></iframe>
 
 </div>
 
-            </div>
+{% include navbar.html %}
 
+
+    <div class="row hidden-sm-down">
+        <div class="col-xs-4 text-center icon-div"><a href="https://instagram.com/{{site.instagram_username}}"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        <div class="col-xs-4 text-center icon-div"><a href="https://twitter.com/{{site.twitter_username}}"><i class="fa fa-twitter" aria-hidden="true"></i></a> </div>
+        <div class="col-xs-4 text-center icon-div">
+            <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+</div>
+<div class="row hidden-md-up">
+        <div class="col-xs-4 text-center icon-div-s"><a href="https://instagram.com/{{site.instagram_username}}"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        <div class="col-xs-4 text-center icon-div-s"><a href="https://twitter.com/{{site.twitter_username}}"><i class="fa fa-twitter" aria-hidden="true"></i></a> </div>
+        <div class="col-xs-4 text-center icon-div-s">
+            <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
 </div>
 <div class="row  m-t-1">
 <div class="col-md-12">
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="embed-responsive embed-responsive-16by9 embed-banner">
   <iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?theme_color=fbc81e&url=https%3A//api.soundcloud.com/playlists/201824315&amp;color=fbc81e&amp;theme_color=fbc81e&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;visual=false" allowfullscreen></iframe>
 
 </div>
@@ -31,23 +37,25 @@ layout: default
 
 
     </div>
+
 </div>
 
 <!--end banner-->
 
 <!--portfolio-->
 
+
 <div class="content">
-<div class="m-x-1">
+<div class="m-x-3">
 
 <div id="portfolio">
 
-<h2 class="m-t-2 m-l-1">Games we've worked on</h2>
-<div class="row">
+<h2 class="m-t-3">Games we've worked on</h2>
+<div class="row m-x-auto">
     {% assign games_rev = site.games | reverse %}
 
                 {% for game in games_rev %}
-                <div class="col-sm-12 m-x-0 p-a-0 portfolio-header">
+                <div class="col-sm-12 p-a-0 portfolio-header">
                     <button type="button" data-toggle="modal" data-target="" onclick="showModal('#{{game.title_no_spaces}}Modal')" class="btn-no-style portfolio-box portfolio-box-button">
                         <img src="{{game.header_image}}" class="img img-responsive" alt="{{game.title}}">
                         <div class="portfolio-box-caption">
@@ -76,14 +84,15 @@ layout: default
 
  <!--about-->
  <div id="about">
-   <h1 class="display-1 text-center">{{site.title}}</h1>
-<div class="m-b-3">{{content}}</div>
-
+   <h2 class="m-b-1 m-t-3">Meet the team</h2>
+<!--<div class="m-b-3">{{content}}</div>-->
 
 {% for person in site.people limit:2 %}
 <div class="row m-t-0 p-b-2 m-x-1" >
-<div class=" col-lg-3 p-a-0">
-            <a href="mailto:{{person.mail}}" class="portfolio-box about-pic">
+<h3 class="display-4">{{person.title}}</h3>
+            <p class="lead m-b-0"><a href="mailto:{{person.mail}}" style="font-size: 18px !important;">{{person.mail}}</a></p>
+<div class="p-a-0 text-justify">
+            <a href="mailto:{{person.mail}}" class="portfolio-box about-pic m-r-1 m-t-0">
                 <img src="{{person.profile_image}}" class="img img-responsive" alt="{{person.title}}">
                 <div class="portfolio-box-caption about-box">
                     <div class="portfolio-box-caption-content">
@@ -93,11 +102,6 @@ layout: default
                     </div>
                 </div>
             </a>
-        </div>
-
-           <div class=" col-lg-8 p-l-2">
-            <h3 class="display-4">{{person.title}}</h3>
-            <p class="lead m-b-0"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{person.mail}}">{{person.mail}}</a></p>
             <p>{{person.content}}</p>
             <p>Favorite game soundtracks: {% for OST in person.fav_vgm %} <i>{{OST}}</i>{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}</p>
         </div>
@@ -108,7 +112,13 @@ layout: default
 
 <!--end about-->
 
+
+</div>
+<div class="m-x-3">
 {% include footer.html %}
+    </div>
 </div>
-</div>
+{% for game in site.games %}
+{{game}}
+{% endfor %}
 

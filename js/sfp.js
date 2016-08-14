@@ -187,10 +187,13 @@ function toggleView() {
     function showModal(modalName) {
         $(modalName).modal();
     }
-    /*function toggleVideo(){
-        $(this).siblings().toggle();
 
-          var player = $(this).siblings('.modal-video').children('iframe');
-        console.log(this, player);
-        player[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-    }*/
+function toggleSection(sectionName){
+        var sectionId = "#" + sectionName;
+        var sectionLink = document.getElementById(sectionName + "Link");
+
+        $(sectionId).show();
+    $(sectionLink).addClass('active');
+    $(sectionLink).siblings().removeClass('active');
+    $(sectionId).siblings().hide();
+}

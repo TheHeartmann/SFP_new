@@ -1,6 +1,8 @@
 ---
 ---
 
+/*Yes, there's a lot of pretty redundant stuff going on in here, but I have no energy (or time) to go through it right now. I'd rather save it for another time, when I can start from scratch. Thanks to Noel Berry for inspiration and source which I have copied (quite literally) so horribly (https://github.com/Drazzke/noelfb)—I'm sorry for dirtying your name; your stuff is great! */
+
 @charset 'utf-8';
 //Variables
 $blue: #8ce7f9;
@@ -9,6 +11,7 @@ $gold: #d3a628;
 $gold-faint: rgba(211,166,40, 0.8);
 $gold-fainter: rgba(211,166,40, 0.4);
 $yellow: #fbc81e;
+$yellow-faint: rgba(251,200,30, .9);
 $brown2: #B58759;
 $blue2: #4AA3B8;
 $red: #9d636e;
@@ -54,34 +57,6 @@ button {
         overflow: hidden;
 }
 
-.hanging-item {
-
-border-top-left-radius:0 !important;
-border-top-right-radius:0 !important;
-}
-
-#jumboIndex {
-    background-color: $green;
-    background-image: url(/uploads/header_noText.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 0;
-    width: 100%;
-    border-bottom: 3px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
-
-}
-
-.carousel-caption {
-background-color: rgba(0,0,0,.5);
-}
-
-
-
-
-
 .nav-item {
     font-size: 1.1em;
     margin-top: .4em;
@@ -101,12 +76,6 @@ background-color: rgba(0,0,0,.5);
     -webkit-filter: blur(5px);
 }
 
-.jumboContent {
-     width: inherit;
-    position: absolute;
-    z-index: 1;
-    & *{z-index: inherit;}
-}
 
 .background {
     background-color: rgba(255,255,255,.95);
@@ -121,9 +90,6 @@ background-color: rgba(0,0,0,.5);
     width: 100%;
     border-radius: .5em;
     overflow: hidden;
-}
-
-.post-header {
 }
 
 .page-header {
@@ -148,7 +114,8 @@ background-color: rgba(0,0,0,.5);
   color: white;
   opacity: 0;
   display: block;
-  background: $blue-faint;
+  border: none;
+    background-color: rgba(0,0,0,.7);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -181,10 +148,12 @@ background-color: rgba(0,0,0,.5);
 }
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+    border: 5px solid $yellow-faint;
 }
 
 .portfolio-box:focus .portfolio-box-caption {
   opacity: 1;
+    border: 5px solid $yellow-faint;
 }
 
 .portfolio-box:focus {
@@ -296,7 +265,10 @@ outline: none;
 
 .about-pic {
     border: 3px solid black;
-     max-width: 500px;
+     max-width: 20vw;
+    min-width: 200px;
+    float: left;
+    display: inline;
 }
 
     .portfolio-box .about-box-caption {
@@ -346,31 +318,14 @@ outline: none;
         }
     }
 
-.shop-frame {
-    border: none;
-    width: 100%;
-    height: 92vh;
-}
-
-.bandcamp-container {
-    max-width: 975px !important;
-    margin:auto;
-}
-
 .game-header {
  border-bottom: 1px solid $gold-faint;
     border-bottom-left-radius: .5em;
     overflow: hidden;
 }
 
-
-
-
-
-
-
 .modal-header {
-    background-color: $gold;
+    background-color: rgba(255,205,30, .9) ;
     border-bottom: none;
 }
 
@@ -391,6 +346,15 @@ outline: none;
     padding: 0;
 border: none;
 background: none;
+    &:focus{
+        outline: none;
+        text-decoration: underline;
+         background-color: $gold-faint !important;
+    }
+    &:hover{
+        text-decoration: underline;
+        background-color: $gold-faint !important;
+    }
 }
 
 
@@ -407,11 +371,6 @@ background: none;
     background-color: $orange !important;
     //background-color: $sfp_gold !important;
     border: none !important;
-}
-
-.sc-button {
-    background-color: $orange !important;
-    //background-color: $sfp_gold !important;
 }
 
 .nav-button {
@@ -450,21 +409,6 @@ display: block;
 }
 
 
-
-
-
-td-third {
-    width: 33%;
-}
-
-.td-half {
-    width: 50%;
-}
-
-
-
-
-
 tr {
     border-top: 2px dashed rgba(0,0,0,0) !important;
 }
@@ -480,7 +424,7 @@ tbody {
 }
 
 body {
-    background-color: $sc-gray;
+    background-color: black;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -507,7 +451,11 @@ body {
     float: right;
     overflow-x: hidden;
     overflow: visible;
-    background-color: white;
+    background-color: black;
+    color: $silver;
+    a {
+        color: $blue-faint;
+    }
 }
 
 .tag-list {
@@ -524,7 +472,7 @@ body {
          background-color: $red !important;
         border: 1px solid $blue;
         &:active{
-            background-color: $green !important;
+            //background-color: $green !important;
         }
     }
 }
@@ -735,10 +683,6 @@ footer {
     height: 100px;
 }
 
-.portfolio-box-button {
-    border: .1rem solid $blue;
-}
-
 .navlist-full {
      width:100%;
 }
@@ -751,28 +695,39 @@ footer {
 
 
 .icon-div {
-    font-size:1.5em;
+    font-size: 3.5vw;
+    a {
+        color: black !important;
+        &:hover, &:focus{
+            color: white !important;
+        }
+    }
 }
 
-
+.navbar-nav{
+    margin-left: 0 !important;
+}
 
 .navbar-nav, .nav-pills {
     display: table;
-    table-layout:fixed;
+    table-layout:auto;
 width: 100%;
 list-style: none;
     overflow:hidden;
     li {
 display: table-cell;
 text-align: center;
-/*        &:first-child{
-            float:left;
-        }
-        &:last-child{
-            float:right;
-        }*/
-        a {
+        width: 50%;
+//       &:first-child{
+//            float:left;
+//        }
+//        &:last-child{
+//            float:right;
+//        }
+        button {
 display: block;
+            width: 100%;
+            cursor: pointer;
 
 }
     }
@@ -853,25 +808,6 @@ display: block;
     float: left;
 }
 
-.banner .social
-{
-    position: absolute;
-    top: 24px;
-    left: 24px;
-}
-.banner .social a
-{
-    width: 64px;
-    height: 64px;
-    float: left;
-    background: url('../img/social.png') no-repeat;
-}
-.banner .social .twitter { background-position: -64px 0px; }
-.banner .social .tumblr { background-position: -128px 0px; }
-.banner .social .email { background-position: -0px 0px; }
-.banner .social .twitter:hover { background-position: -64px -64px; }
-.banner .social .tumblr:hover { background-position: -128px -64px; }
-.banner .social .email:hover { background-position: -0px -64px; }
 
 /* PORTFOLIO 					*/
 /* ---------------------------- */
@@ -990,124 +926,11 @@ display: block;
 .portfolio .section .article:nth-child(2n+0) { margin-right: 0; }
 
 
-/* INDIVIDUAL WORK 				*/
-/* ---------------------------- */
-
-.works
-{
-    position: absolute;
-    background: #ddd;
-    left: 100%;
-    width: 100%;
-    min-height: 100%;
-    float: left;
-}
-
-.works .back
-{
-    position: absolute;
-    width: 120px;
-    background: rgba(0,0,0, 0.6);
-    color: #fff;
-    font-weight: bold;
-    border-radius: 32px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 8px 12px 8px 12px;
-    left: 24px;
-    top: 24px;
-    transition: background 0.1s, color 0.1s;
-}
-.works .back:hover
-{
-    background: #000;
-    color: #44ffaa;
-    cursor: pointer;
-}
-
-.works .work
-{
-    width: 100%;
-    background: #fff;
-    box-sizing: border-box;
-    padding-bottom: 60px;
-    display: none;
-    float: left;
-}
-
-.works .work .postcard
-{
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center center;
-}
-.works .work > h1
-{
-    padding: 60px 60px 0px 60px;
-    margin: 0;
-    font-weight: bold;
-    width: 100%;
-    box-sizing: border-box;
-    float: left;
-}
-.works .work .info
-{
-    padding: 10px 60px 0 60px;
-    width: 100%;
-    max-width: 720px;
-    line-height: 1.5em;
-    box-sizing: border-box;
-    float: left;
-}
-.works .work .links
-{
-    padding: 20px 60px 60px 60px;
-    width: 100%;
-    box-sizing: border-box;
-    float: left;
-}
-.works .work .links a
-{
-    float: left;
-    height: 20px;
-    padding: 8px 16px 4px 12px;
-    margin-right: 12px;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid #000;
-    border-radius: 20px;
-}
-.works .work .links a img { margin-right: 12px; float: left; }
-.works .work .links a p { margin-top: -3px; float: left; }
-.works .work .links a:hover { color: #22aa88; border: 1px solid #22aa88 }
-
-.works .work .disqus
-{
-    width: 100%;
-    max-width: 720px;
-    padding: 60px;
-    box-sizing: border-box;
-    float: left;
-}
-
-.ending
-{
-    width: 100%;
-    padding: 60px;
-    box-sizing: border-box;
-    background: #ddd;
-    color: #666;
-    text-align: center;
-    float: left;
-}
-
 /* RESIZING STUFF				*/
 /* ---------------------------- */
 
-@media(max-width: 900px) {
-    .banner { position: relative; width: 100%; height: 600px; }
+@media(max-width: 992px) {
+    .banner { position: relative; width: 100%;}
     .content { position: relative; width: 100%; }
 }
 
@@ -1125,7 +948,58 @@ display: block;
 
 .portfolio-header {
     overflow:hidden;
-    margin-bottom: .2em;
+    margin-bottom: 1em;
+    max-width: 960px;
+}
+
+.portfolio-box-button:hover img, .portfolio-box-button:focus img {transform: scale(1.2, 1.2); -webkit-transition-duration: 3s; -moz-transition-duration: 3s; -o-transition-duration: 3s;}
+
+.m-t-x {
+    margin-top: 3.5em;
+}
+
+#about {
+    display: none;
+}
+
+.logo-header {
+    background-image: url(/uploads/logo_border_compressed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    //min-height: 200px;
+    height: 33vh;
+    //max-width: 40vw;
+}
+
+.icon-div-s {
+    font-size: 10vw;
+    a {
+        color: black !important;
+        &:hover, &:focus{
+            color: white !important;
+        }
+    }
+}
+
+.modal-content {
+
+}
+
+.modal-dark {
+    background-color: rgba(0,0,0,.7) ;
+    border: 2px solid $yellow-faint ;
+    color: white ;
+     border: 3px solid rgba(255,230,30, .5);
+    a {
+        color: $yellow;
+    }
+}
+
+
+
+.embed-banner {
+    min-height: 300px;
 }
 
 

@@ -8,7 +8,7 @@
     <link rel="icon" href="/favicon.ico" type="image/icon">
 
 
-    <title>{% if page.title %}{{ page.title | escape }} | {{site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{{ site.title-short | escape }}</title>
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Bootstrap core CSS -->
@@ -21,11 +21,11 @@
 
 
     <link rel="stylesheet" href="{{" /css/bootstrap.css " | prepend: site.baseurl }}" type="text/css">
-    <link rel="stylesheet" href="{{" /css/sfp.css " | prepend: site.baseurl }}" type="text/css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
 
+    <link rel="stylesheet" href="{{" /css/sfp.css " | prepend: site.baseurl }}" type="text/css">
 <!--    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}">--> <!--Not sure what these do, but they haven't been doing anything so far-->
 </head>
