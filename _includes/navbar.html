@@ -2,11 +2,11 @@
 <div class="navbar navbar-full navbar-light p-a-0 m-a-0">
     <div class="m-x-0 p-x-0 navlist-full">
         <ul class="nav navbar-nav">
-            {% for page in site.pages reversed %} {% if page.title %}
-            <li role="presentation" class="nav-item {% if page.title == currentTitle %} active {% endif %}" id="{{page.title | downcase}}Link">
-                <button class="nav-link btn-no-style" onClick="toggleSection('{{page.title | downcase}}')">{{ page.title | upcase }}</button>
+            {% for section in site.sections reversed %}
+            <li role="presentation" class="nav-item {% if section.title == currentTitle %} active {% endif %}" id="{{section.title | downcase}}Link">
+                <button class="nav-link btn-no-style" onClick="toggleSection('{{section.title | downcase}}')">{{ section.title | upcase }}</button>
             </li>
-            {% endif %} {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 

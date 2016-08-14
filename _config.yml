@@ -3,6 +3,9 @@ title: Sounds for Pixels
 title-short: SFP
 timezone: Europe/Berlin
 collections:
+  sections:
+    title: Sections
+    output: false
   games:
     title: Games
     output: false
@@ -28,6 +31,13 @@ defaults:
     permalink:
     has_sidebar: false
     sidebar_icon:
+- scope:
+    path: ''
+    type: sections
+  values:
+    title:
+    number:
+    is_active:
 - scope:
     path: ''
     type: games
