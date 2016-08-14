@@ -13,7 +13,7 @@
 
             <div class="row m-x-1 text-xs-center">
                 <div class="col-xs-12 p-a-0">
-                    <h2 class="display-5 m-b-0 p-b-0"><a href="{{page.shop_url}}" style="color=red:">{{ page.title }}</a><small class="text-muted text-xs-center text-md-left p-y-0 m-y-0"><br>{% for role in page.roles %}
+                    <h2 class="display-5 m-b-0 p-b-0 game-title"><a href="{{page.shop_url}}">{{ page.title }}</a><small class="text-muted text-xs-center text-md-left p-y-0 m-y-0"><br>{% for role in page.roles %}
                                    {% unless forloop.first %}
                                     |
                                     {% endunless %}
