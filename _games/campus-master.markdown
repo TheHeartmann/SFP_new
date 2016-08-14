@@ -25,4 +25,4 @@ layout: game
 
 
 ### Nostalgia.
-For *Campus Master* we wanted to have a bit of an nostalgic feel to the music. We purposefully used older sounding synths to create a bit of an hommage to classic soundtracks we used to listen to while playing games in our younger years. Synths, E-Pianos and string ensembles come together for a positive, but also bittersweet backdrop for building your own dream schools.
+For *Campus Master* we wanted to have a nostalgic feel to the music. We purposefully used older sounding synths to create a bit of an hommage to classic soundtracks we used to listen to while playing games in our younger years. Synths, E-Pianos and string ensembles come together for a positive, but also bittersweet backdrop for building your own dream schools.
