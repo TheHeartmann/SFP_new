@@ -5,7 +5,7 @@ permalink: games/checkmate/
 title_no_spaces: Checkmate
 sc_id: 268729949%3Fsecret_token%3Ds-3Pky5
 yt_id: Le8fOWD_xco
-shop_url:
+shop_url: http://www.indiedb.com/games/checkmate
 shop_name:
 available_at:
 header_image: "/uploads/checkmate_carousel.png"
